@@ -1,0 +1,63 @@
+.base-header{
+	background-image: url("../img/picjumbo.jpg");
+	background-color: #2f3740;
+	@extend %mybackimg;	
+	color: $color-white;
+	 
+	.regin{
+		// background-color: #1a1c27;
+		background-color: rgba(26, 28, 39, 0.9);  
+		padding: 10px 0;
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 1030;
+		
+		ul{
+			li{
+				padding-right: 30px;
+				color: $color-white;
+				&:last-of-type{
+					float: right;
+				}
+
+				i{
+					display: inline-block;
+				}
+			}
+		} 
+	}
+
+	.banner{
+		padding: 180px 0;
+		text-align: center;
+		text-transform: uppercase;
+		.crest{
+			height: 266px;
+			width: 266px;
+			display: inline-block;
+		}
+
+		h1{
+			font-size: 4.6rem;
+			border: 5px solid;
+			padding: 15px; 
+			display: inline-block;
+		}
+		strong{
+			padding-top: 40px;
+			font-size: 1.8rem; 
+			white-space: 1.2;
+			display: inline-block; 
+		}
+
+		.btn{
+			margin-right: 15px;
+			&:nth-of-type(2){
+				background-color: #34495e;
+				border: 1px solid #34495E  
+			}
+		}
+	}
+}
+/* end base-header */

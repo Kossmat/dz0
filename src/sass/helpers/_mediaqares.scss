@@ -1,0 +1,32 @@
+$bkpt-login-small: 370px;
+$bkpt-login-medium: 490px;
+$bkpt-login-large: 865px;
+
+body{
+  //background-color: hsl(0,100%,25%);
+}
+ 
+/*@include breakpoint($bkpt-login-small){
+	  .base-header, .featured-work, .team-wrapper, .contact, .base-footer-wrapper{
+		@include span(4 of 6);
+    	//@include clearfix;;
+	}
+  /*body{
+    //background-color: hsl(30,100%,50%);
+  }
+}*/
+ 
+@include breakpoint($bkpt-login-medium){
+  body{
+    //background-color: hsl(60,100%,50%);
+  }
+}
+ 
+@include breakpoint($bkpt-login-large){
+	  .base-header, .featured-work, .team-wrapper, .contact, .base-footer-wrapper{
+		@include container(1000px);
+	}
+/*{
+    //background-color: hsl(120,100%,50%);
+  }*/
+}

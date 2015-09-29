@@ -1,0 +1,59 @@
+@include MQ(M) {
+	// 600px to 800px
+.container{
+	@include container(640px);
+}
+/* ******** */ 
+/* ***************** */
+.base-header{
+
+} 
+
+.container-base-header{
+	@include container(688px);
+}
+/* ***************** */
+.menu{
+	display: none;
+}
+
+.info{
+	@include full;
+}
+
+
+.worksheet-what,
+.worksheet-info,
+.where{
+	font-size: 15px;
+}
+
+.contacts{
+	.contacts-header{
+		display: none;
+	}
+
+	.contacts-list{
+		@include full;
+	}
+
+	.contacts-item{
+		display: inline-block;
+		@include span(33.3333%);
+		margin-right: 0;
+		
+		&:last-child{
+			border-radius: 0;
+		}
+	}
+
+	.contacts-link{
+	    font-size: 12px;
+    	margin-left: 15px;
+	}
+}
+/* ***************** */
+.hide{
+		display: block;
+	}
+}/* end M */

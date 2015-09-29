@@ -1,0 +1,22 @@
+@include MQ(L) {
+// 800px to 1024
+.container{
+	@include container(790px);
+}
+/* ******** */ 
+/* ***************** */
+.base-header{
+	
+
+} 
+/* ***************** */
+.menu,
+.info{
+	@include full;
+}
+
+.menu{
+	text-align: center;
+}
+/* ***************** */
+}/* end Lplus */

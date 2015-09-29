@@ -1,0 +1,128 @@
+//490px
+@include MQ(S) {
+.container{
+	@include container(400px);
+}
+
+
+/* ***************** */
+.base-header{
+	.social-icons{
+		display: none;
+	} 
+} 
+ 
+.container-base-header{
+	@include container(400px);
+}
+
+.navigation{
+	width: 60%;
+	float: right;
+	position: relative;
+	&:after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 15%;
+        width: 0;
+        height: 0;
+        border: 15px solid #f7f8fa;
+        border-top-color: white;
+    }
+}
+/* ***************** */
+
+.info{
+	@include full;
+}
+
+.menu{
+	text-align: center;
+	display: none;
+}
+/* ***************** */
+
+
+.infobox{
+	text-align: center;
+	margin-bottom: 20px;
+	// margin: 0 auto;
+	.container-header{
+		// text-align: center;
+	}
+}
+
+.worksheet-wrap{
+	padding: 20px;
+	padding-top: 0;
+	text-align: left
+}
+
+
+.avatar-box{
+	display: inline-block;
+	text-align: center;
+}
+
+.worksheet-what,
+.worksheet-info,
+.where{
+	font-size: 15px;
+}
+
+period{
+	font-size: 14px;
+}
+
+bottom-contacts{
+	margin-top: 20px;	
+}
+
+.contacts-header{
+	display: none;
+}	
+
+/* ***************** */
+.infobox-item{
+	padding: 12px;
+}
+
+.icon{
+	display: inline-block;
+	text-align: center;
+	width: 44px;
+	height: 44px;
+	margin-bottom: 10px;
+}
+/* ***************** */
+.bottom-contacts-wrap{
+	.contacts{
+		.contacts-link{
+			font-size: 24px;
+		}
+	}
+	.social-icons{
+		display: block;
+		margin: 100px 0;
+	}
+}
+/* ***************** */
+.icon-unlock{
+	display: none;
+}
+
+.copyright{
+	font-size: 8px;
+	font-family: 'open_sanslight', sans-serif;
+}
+/* ***************** */
+
+	.float-left{
+		float: none;
+	}	
+
+	.hide{
+		display: block;
+	}
+} //end MQ

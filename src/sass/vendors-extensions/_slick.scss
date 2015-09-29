@@ -1,0 +1,68 @@
+@import "helpers/variables";
+.slick-prev::before{
+	content: "\e60d"!important;
+}
+
+.slick-next::before{
+	content: "\e60e"!important;
+}
+/* ************ */
+.banner{
+	.slick-next, .slick-prev{
+		height: 60px;
+		width: 60px;
+    }
+
+	.slick-prev::before, .slick-next::before{
+		font-size: 20px;
+		line-height: 1.1;
+	    opacity: 0.75;
+	    -webkit-border-radius: 50%; 
+		border-radius: 50%;
+		border: 1px solid; 
+		padding: 10px; 
+		font-weight: normal;
+	}
+
+	.slick-prev::before{
+		border-color: $color-white;  
+	}
+
+	.slick-next::before{
+		background-color: rgba(0, 0, 0, 0.5);
+		border-color: transparent;
+	}
+
+
+	.slick-dots li button::before {
+		display: none;
+	}
+}
+
+
+
+/* ************ */
+.partners{
+	.slick-next, .slick-prev{
+		height: 20px;
+		width: 20px;
+    }
+
+    .slick-prev::before, .slick-next::before{
+    	// color: white;
+		font-size: 10px;
+		opacity: 0.75;
+	    border-radius: 2px;
+	    font-weight: normal;
+	    padding: 5px;
+    }
+
+	.slick-prev::before{    
+	    background-color: $color-brand; 
+	}
+	.slick-next::before {
+		background-color: #34495e;
+	}
+}
+
+

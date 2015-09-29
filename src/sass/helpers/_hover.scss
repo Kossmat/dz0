@@ -1,0 +1,44 @@
+.icon-fb{
+	&:hover{
+		background-image: url(../img/sprite.png);
+  		background-position: -60px -60px;
+	}
+}
+
+.icon-vk{
+	&:hover{
+		// background: url(../img/sprite.png) -120px 0px;
+		background-image: url(../img/sprite.png);
+		background-position: 0px -120px;
+	}
+}	
+
+
+.icon-tw{
+	&:hover{
+		// background: url(../img/sprite.png) -60px -120px;
+		background-image: url(../img/sprite.png);
+  		background-position: -60px -120px;
+	}
+}	
+
+
+.icon-git{
+	&:hover{
+		background-image: url(../img/sprite.png);
+		background-position: -120px -60px;
+	}
+}	
+
+.contacts-item{
+	&:hover{
+		@extend %hoverCont;
+		// color: #000;
+	}
+}			
+
+.navigation-item{
+	&:hover{
+			@extend %hoverNav;
+		}
+}

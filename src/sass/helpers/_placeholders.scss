@@ -1,0 +1,58 @@
+@import "helpers/variables";
+%icons{
+	background-color: #e1e1e1;
+	border-radius: 100%;
+	//color: $color-footerIn;
+	padding: 10px;
+}
+
+
+%myfont{
+  	font-family: 'roboto_slabregular', sans-serif;
+}
+
+// h1 {
+//   @extend %myfont;
+// }
+
+%mybtn{
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px 10px;
+	border-color: $color-brand;
+	background-color: $color-white;
+	color: $color-brand;
+}
+
+%mybackimg{
+	background-position: center top;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover; 
+	 -o-background-size: cover; 
+	 background-size: cover; 
+}
+
+%myborder{
+	border: $border;
+	border-top: none;
+	border-bottom: none;
+}
+
+
+%myflexflow{
+	-webkit-flex-flow: row wrap; 
+	-ms-flex-flow: row wrap; 
+	flex-flow: row wrap;
+}
+
+%myprice{
+	text-align: center;
+	font-size: 1.5em; 
+	font-weight: bold;
+}
+
+%gradient{
+	background-image:
+	linear-gradient(to left, rgba(231,239,243,1) 0%,rgba(229,238,243,1) 7%,rgba(222,233,239,1) 9%,rgba(205,222,228,1) 14%,rgba(165,195,206,1) 22%,rgba(123,167,180,1) 30%,rgba(76,135,151,1) 36%,rgba(49,116,135,1) 41%,rgba(37,109,128,1) 44%,rgba(28,102,122,1) 48%,rgba(28,102,122,1) 50%,rgba(33,105,125,1) 53%,rgba(44,112,131,1) 57%,rgba(56,121,139,1) 60%,rgba(75,134,150,1) 63%,rgba(124,167,179,1) 71%,rgba(168,196,206,1) 79%,rgba(205,221,227,1) 87%,rgba(220,231,237,1) 91%,rgba(229,238,243,1) 94%,rgba(231,239,243,1) 100%);
+}

@@ -1,0 +1,165 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-bag {
+  background-image: url(../img/sprite.png);
+  background-position: -90px -180px;
+  width: 25px;
+  height: 20px;
+}
+.icon-burger {
+  background-image: url(../img/sprite.png);
+  background-position: -180px -114px;
+  width: 25px;
+  height: 21px;
+}
+.icon-col {
+  background-image: url(../img/sprite.png);
+  background-position: -239px -58px;
+  width: 9px;
+  height: 18px;
+}
+.icon-coroner {
+  background-image: url(../img/sprite.png);
+  background-position: -239px 0px;
+  width: 10px;
+  height: 38px;
+}
+.icon-fb-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -60px -60px;
+  width: 40px;
+  height: 40px;
+}
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -120px 0px;
+  width: 40px;
+  height: 40px;
+}
+.icon-git-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -120px -60px;
+  width: 40px;
+  height: 40px;
+}
+.icon-git {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+.icon-hat {
+  background-image: url(../img/sprite.png);
+  background-position: -135px -180px;
+  width: 25px;
+  height: 20px;
+}
+.icon-list {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -180px;
+  width: 25px;
+  height: 20px;
+}
+.icon-lock {
+  background-image: url(../img/sprite.png);
+  background-position: -120px -220px;
+  width: 15px;
+  height: 19px;
+}
+.icon-mail {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -220px;
+  width: 20px;
+  height: 20px;
+}
+.icon-mail_c {
+  background-image: url(../img/sprite.png);
+  background-position: -180px 0px;
+  width: 39px;
+  height: 37px;
+}
+.icon-pan {
+  background-image: url(../img/sprite.png);
+  background-position: -45px -180px;
+  width: 25px;
+  height: 20px;
+}
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -40px -220px;
+  width: 20px;
+  height: 20px;
+}
+.icon-phone_c {
+  background-image: url(../img/sprite.png);
+  background-position: -120px -120px;
+  width: 39px;
+  height: 38px;
+}
+.icon-skype {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -220px;
+  width: 20px;
+  height: 20px;
+}
+.icon-skype_c {
+  background-image: url(../img/sprite.png);
+  background-position: -180px -57px;
+  width: 39px;
+  height: 37px;
+}
+.icon-tw-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -60px -120px;
+  width: 40px;
+  height: 40px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -60px;
+  width: 40px;
+  height: 40px;
+}
+.icon-unlock {
+  background-image: url(../img/sprite.png);
+  background-position: -180px -180px;
+  width: 22px;
+  height: 19px;
+}
+.icon-vk-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -120px;
+  width: 40px;
+  height: 40px;
+}
+.icon-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -60px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+// .icon-unlock,
+// .icon-col,
+.icon-lock,
+.icon-mail_c,
+.icon-phone_c,
+.icon-skype_c,
+.icon-bag,
+.icon-hat,
+.icon-list,
+.icon-pan{
+  font-size: 0;
+  display: inline-block;
+} 

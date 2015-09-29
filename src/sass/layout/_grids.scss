@@ -1,0 +1,51 @@
+﻿// Requirements
+// ============
+
+// @import "susy";
+@import "../apps/susy/sass/susy";
+
+$susy: (
+  	columns: 12,
+  	gutters: 1/8,
+  	math: fluid,
+  	output: float,
+	use-custom: (rem: true)
+);
+
+@include border-box-sizing;
+
+.container{
+	@include container(960px);
+	// @include clearfix;
+}
+/* ***** */
+.include__full{
+	@include full;
+}
+
+.wrapper{
+	@include container;
+    @include clearfix;
+}
+/* ******** */
+
+.container-base-header{
+	@include container(1200px);
+}
+
+
+.menu{
+	@include span(3.2);
+	max-width: 250px;
+}
+
+.info{
+	@include span(8.2);
+	margin-right: 0%;
+	max-width: 650px;
+}
+
+
+.copyright{
+
+}

@@ -1,0 +1,101 @@
+.menu{
+	// background-color: #eff3f7;
+	margin:0 60px 25px 0;
+	color: $color-paragraph;
+}
+
+	.navigation{
+		margin-bottom: 34px;
+		font-size: 20px;
+		font-weight: 500;
+		border-radius: 5px 5px;
+	    box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
+	} 		
+		.navigation-list{
+			color: #727070;
+			
+		}
+		.navigation-item.active{
+			@extend %green;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			color: #1e7465;
+			padding: 10px 20px;
+		}
+
+		.navigation-item{
+			@extend %usualNav;
+			font-size: 21px;
+			padding: 12px 20px;
+
+			&:hover{
+				@extend %hoverNav;
+			}
+
+			&:last-child{
+				border-radius: 0 0 5px 5px;
+    			box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
+			}
+		}
+/* end navigation */		
+
+	.contacts{
+
+		.contacts-header{
+				@extend %yellow;
+				padding: 5px 0px 10px 17px;
+				font-size: 20px;	
+				border-radius: 5px 5px 0 0;
+    			box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
+		}
+
+		.header-inner-text{
+			color: $color-contheader;
+		}
+
+		.contacts-item{
+			@extend %usualCont;	
+			border-bottom: 1px solid #d6d5d3;
+			padding: 0 10px;
+
+			&:hover{
+				@extend %hoverCont;
+			}
+
+			&:last-child{
+				border-radius: 0 0 5px 5px;
+    			box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
+			}
+		}
+
+		.contacts-item-mail{
+			.contacts-link{
+				// text-decoration: underline;
+			}
+		}
+
+		.icon-cont{
+		  display: inline-block;
+		  font-size: 0;
+		  vertical-align: middle
+		}
+
+		.contacts-link{
+			font-size: 14px;
+			color: #727070;
+			margin-left: 35px;
+			display: inline-table;
+			vertical-align: middle;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		.contact-text{
+			margin-bottom: 10px;
+		}
+	}
+
+
+
+

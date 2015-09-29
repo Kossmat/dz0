@@ -1,0 +1,64 @@
+// $XS: 320px to 490px; */
+
+@include MQ(XS){
+.container{
+	@include container(280px);
+}
+
+/* ***************** */
+.base-header{
+	
+.social-icons{
+		float: none;
+		margin-top: 5px;
+		li{
+			margin-right: 13px;
+		}
+	} 
+} 
+/* ***************** */
+.menu,
+.info{
+	@include full;
+}
+
+.menu{
+	text-align: center;
+}
+/* ***************** */
+.experience,
+.education{
+	ul{
+		padding: 23px 20px 56px;
+	}
+
+	i{
+		vertical-align: top;
+	}
+
+	div{
+		padding-left: 5px;
+		width: 78%;
+	}
+
+	strong{
+		font-size: 14px;
+	}
+	
+	span{
+		font-size: 12px;
+	}
+}	
+/* ***************** */
+
+/* ***************** */
+
+
+/* ***************** */
+
+/* ***************** */
+
+/* ***************** */
+
+/* ***************** */	
+}

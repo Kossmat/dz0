@@ -1,0 +1,117 @@
+@include MQ(XL) {
+// 1024 to 1200
+	.container{
+		@include container(970px);
+	}
+
+/* ******** */ 
+.base-header{
+	.top-menu{
+		padding-top: 50px;
+		li{
+			font-size: 0.8rem;
+		}
+
+
+		.logo{
+			margin-right: 20px;
+			margin-top: 2px;
+			height: 35px !important;
+			width: 120px !important;
+		}
+	}
+
+	.header-wrap{
+			article{
+				margin-bottom: 20px;
+		}
+	}
+
+
+/* ******** */
+/* ******** */
+/* ******** */
+/* ******** */
+.newproject{
+
+	.fl1{
+		flex-direction: row-reverse;
+	}
+	.fl4{
+		flex-direction: row;
+	}
+
+	.flex .text{
+		header{
+			padding-top: 10px;
+		}
+		p{
+			padding: 14px;
+		}
+	}
+
+
+	.fl2{
+		
+		footer{
+			padding-top: 16px;
+			text-align: center;
+		}
+	}
+
+	.btn{
+		font-size: 0.7em;
+	}
+
+	.slick-prev{
+		left: 43%;
+	}
+	.slick-next{
+		right: 43%;
+	}
+}
+/* ******** */
+
+// .introduction{
+// 	ul{
+// 		li{			
+// 	}
+// }
+
+/* ******** */
+// .feature ol li{
+// 	font-size:  0.8em;
+// }
+/* ******** */
+.mobile .text {
+	padding: 0;
+}
+/* ******** */
+.news{
+	figure .social-icons i {
+		padding-left: 10px;
+	}
+}
+/* ******** */
+.base-footer{
+		.brand, .links, .latest-news, .contact{
+				@include span(3);
+			}
+
+		.base-footer-wrapper section{
+			padding-right: 8px;
+			margin-right: 8px;
+		}	
+
+		.social-icons{
+			font-size: 0.9em;
+		}
+
+		.bottom-menu {
+			li {
+				padding-left: 10px;
+			}
+		}
+	}		 
+}
+}

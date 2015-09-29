@@ -1,0 +1,71 @@
+// @import "compass";
+// @import "susy";
+// @import "breakpoint";
+@import "helpers/variables";
+// @import "helpers/layout";
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+strong, small, p{
+	color: $color-paragraph;
+}
+
+ul{
+	list-style: none;	
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+
+body{
+	font-family: 'open_sanssemibold', sans-serif;
+	background-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;   
+	font-size: 16px; 
+	line-height: 1.5;
+	// letter-spacing: 1px;
+}
+
+
+
+
+.cf{
+	.cf:before,
+		.cf:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.cf:after {clear: both;
+		}
+}
+
+.text-right{
+	text-align: right;
+}
+
+
+.section-header{
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.float-left{
+	float: left;
+}
+
+.hide{
+	display: none;
+}

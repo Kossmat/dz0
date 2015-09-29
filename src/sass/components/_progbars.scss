@@ -1,0 +1,61 @@
+.skills__tablet{
+	padding: 90px 25px;
+	padding-top: 0;
+	.meter { 
+		height: 35px;  /* Can be anything */
+		position: relative;
+		background: $color-white;
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		border-radius: 5px;
+		border: 1px solid #e0e0e0;
+		// padding: 5px 10px;
+		margin: 10px 0;
+		box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	}
+}
+
+
+.meter{	
+	span{
+		display: block;
+  		height: 100%;
+  		border-top-right-radius: 5px;
+  		border-bottom-right-radius: 5px;
+		position: relative;
+	  	overflow: hidden;
+	  	text-transform: uppercase;
+	  	font-weight: bold;
+	  	color: #FFF; 
+	  	padding: 5px 20px;
+	  	
+	}
+}
+
+.first__skill > span{
+			background-image:
+		    linear-gradient(
+		      to right, 
+		      #9fec75, #f8cb39);
+		}
+
+.second__skill > span{
+		background-image:
+	    linear-gradient(
+	      to right, 
+	      #ee8e70, #fed308);
+	}
+
+.third__skill > span{
+		background-image:
+	    linear-gradient(
+	      to right, 
+	      #16e2ef, #b0fe85);
+	}
+
+.fourth__skill > span{
+		background-image:
+	    linear-gradient(
+	      to right, 
+	      #b17deb, #66e6c0);
+	}

@@ -1,0 +1,23 @@
+.product--header{
+	ul{   
+		border-bottom: 3px solid $color-brand;
+	  
+		li{
+			display: inline-block;
+			
+			-webkit-border-top-right-radius: 5px; 
+			border-top-right-radius: 5px; 
+			-webkit-border-top-left-radius: 5px; 
+			border-top-left-radius: 5px; 
+			border: 1px solid $silver-chalice;
+			border-bottom: none; 
+			padding: 15px; 
+
+			&:first-of-type{
+				background-color: $color-brand;
+				border-color: transparent;  
+				color: $color-white;    
+			}
+		}
+	}
+}

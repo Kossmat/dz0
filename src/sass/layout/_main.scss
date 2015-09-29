@@ -1,0 +1,163 @@
+.main{
+	padding-top: 39px;
+	padding-bottom: 36px;
+	// border-top: 1px solid #dbcf9e;
+	border-bottom: 1px solid #54656f;
+}
+
+.infobox{
+	background-color: $color-article;
+	border-radius: 3px;
+	margin-bottom: 32px;	
+}
+
+	/* infobox-item */
+	.infobox-item{
+		padding: 25px 35px;
+		padding-bottom: 0;
+		&:last-of-type{
+			.period{
+				border: none;
+			}
+		}
+	}
+
+
+.icon{
+	background-color: white;
+	padding: 10px 10px 7px 10px;
+	padding-bottom: 5pxx;
+	border-radius: 100%;
+	margin-right: 30px;
+	box-shadow:  -1px -1px 0 rgba(0,0,0,0.5);
+}
+
+	div.worksheet-item{
+		padding-top: 10px;
+	}
+	
+
+	.worksheet-what{
+		font-size: 14px;
+		font-weight: 600;
+		display: inline-block;
+	}
+
+	.worksheet-info{
+		color: $color-paragraph;
+		font-size: 14px;
+		font-weight: lighter;
+		font-family: 'open_sansregular', sans-serif;
+		display: inline-block;
+	}
+
+	.where{
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	.period{
+		font-size: 15px;
+		font-family: 'open_sansregular', sans-serif;
+		border-bottom: 2px solid #dbdad9 ;
+		padding-bottom: 30px;
+	}
+
+
+.container-header{
+	@extend %grey;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	color: $color-white;
+	margin-bottom: 10px;
+	padding: 8px 0 8px 33px;
+	font-size: 24px;
+}
+	/* */
+.image-wrap{
+
+}
+
+.avatar-box{
+	width: 152px;
+	height: 152px;
+	margin: 38px 34px;
+	border-radius: 100%;
+	border: 8px solid white;
+	box-shadow:  0px 0px 8px rgba(145,144,143,0.5);
+	overflow: hidden;
+}
+
+.ava{
+	width: 100%;
+}
+
+	.worksheet-wrap{
+		padding-top: 32px;
+	}
+
+
+/* skills */
+.skills-list{
+	max-width: 230px;
+	display: inline-table;
+}
+
+.skills-label{
+	color: #1e7465;
+	border: 1px solid #cdcccc;
+	border-left: none;
+	border-radius: 0 3px 3px 0;
+	font-size: 10px;
+	font-weight: bold;
+	// padding-right: 6px;
+	display: inline-block;
+	position: relative;	
+	margin-left: 16px;
+	margin-bottom: 9px;
+
+}
+
+.no-csstransforms .skills-label{
+	padding: 1px 6px;
+	background-color: #eae9e8;
+	&:before, .js{
+		content: " ";
+		background: url(../img/col.png)no-repeat;
+		position: absolute;
+		left: -28%;
+	    top: 0%;
+	    width: 9px;
+	    height: 18px;
+
+	}
+}
+
+.no-csstransforms .skills-label.js{
+		&:before{
+			left: -12%;
+		}
+	}
+
+.csstransforms .skills-label{
+		padding: 3px 6px;
+		&:before{
+	    content: "°";
+	    color: $color-paragraph;
+	    background-color: inherit;
+	    font-size: 12px;
+	    padding-left: 4px;
+	    height: 17px;
+		width: 17px;
+	    position: absolute;
+	    right: 100%;
+	    top: 50%;
+	    transform: translateY(-50%) translateX(50%) rotate(-45deg);
+	    border: 1px solid #cdcccc;
+	    border-right-color: transparent;
+	    border-bottom-color: transparent;
+	    border-top-right-radius: 2px;
+	    border-bottom-left-radius: 2px;
+	}
+}
+

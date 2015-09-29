@@ -1,0 +1,20 @@
+.form{
+	input, textarea{ 
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		margin-bottom: 10px;
+		border: none;
+		padding: 15px 0 15px 15px;
+	}
+
+	textarea{
+		resize: none;
+		color: inherit; 
+		height: 102px;
+	}
+	button{
+		margin-top: 0%;
+		width: 100%;
+		padding: 10px; 
+	}
+}
