@@ -6,7 +6,7 @@
 
 $susy: (
   	columns: 12,
-  	gutters: 1/8,
+  	gutters: .25,
   	math: fluid,
   	output: float,
 	use-custom: (rem: true)
@@ -45,6 +45,31 @@ $susy: (
 	max-width: 650px;
 }
 
+.lead{
+    @include container;
+}
+
+.image-wrap{
+    @include span(4);
+    margin-right: 0;
+}
+
+.worksheet-wrap{
+    @include span(8);
+    margin-right: 0;
+}
+
+.infobox-item{
+    @include container;
+}
+
+.form-group{
+    @include span(4);
+}
+
+.check{
+    @include span(10);
+}
 
 .copyright{
 

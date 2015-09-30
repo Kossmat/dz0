@@ -52,6 +52,19 @@ body{
 		}
 }
 
+
+.clearfix{
+	display: inline-block;
+		&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+
 .text-right{
 	text-align: right;
 }

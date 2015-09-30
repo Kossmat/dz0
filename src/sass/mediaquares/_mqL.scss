@@ -10,7 +10,11 @@
 
 } 
 /* ***************** */
-.menu,
+
+.menu{
+    display: none;
+}
+
 .info{
 	@include full;
 }
@@ -18,5 +22,35 @@
 .menu{
 	text-align: center;
 }
+
+
+.contacts{
+    .contacts-header{
+        display: none;
+    }
+
+    .contacts-list{
+        @include full;
+    }
+
+    .contacts-item{
+        display: inline-block;
+        @include span(33.3333%);
+        margin-right: 0;
+        
+        &:last-child{
+            border-radius: 0;
+        }
+    }
+
+    .contacts-link{
+        font-size: 12px;
+        margin-left: 15px;
+    }
+}
+
+.hide{
+        display: block;
+    }
 /* ***************** */
 }/* end Lplus */

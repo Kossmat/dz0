@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- endbuild -->
 
-	<script src ="apps/jquery/dist/jquery.min.js"></script>
+	<script src ="js/jquery-1.11.2.min.js"></script>
 
 	<!-- build:js js/vendor.js -->
 	<script src="apps/html5shiv/dist/html5shiv-printshiv.min.js"></script>
@@ -58,11 +58,11 @@
 				<nav class="navigation">
 					<ul class="navigation-list">
 						<li class="active / navigation-item /  current">
-						<a href="/" class="navigation-list">Обо мне</a>
+						<a href="/index.html" class="navigation-list">Обо мне</a>
 						</li>
 
 						<li class="navigation-item">
-						<a href="/" class="navigation-list">Мои Работы</a>
+						<a href="/page2.html" class="navigation-list">Мои Работы</a>
 						</li>
 
 						<li class="navigation-item">
@@ -134,7 +134,7 @@
 			<!-- left block -->
 
 			<div class="info  / cf">
-				<section class="infobox">
+				<section class="infobox / lead">
 					<div class="container-header">
 						Основная информация
 					</div>
@@ -145,11 +145,11 @@
 						</div>
 					</div>
 					
-					<div class="worksheet-wrap / cf">
+					<div class="worksheet-wrap">
 						<ul class="worksheet-list">
 							<li class="worksheet-item">
 								<p class="worksheet-what">Меня зовут:</p> 
-								<p class="worksheet-info">  Паршин Дмитрий Сергеевич</p>
+								<p class="worksheet-info"> Паршин Дмитрий Сергеевич</p>
 							</li>
 
 							<li class="worksheet-item">
@@ -189,30 +189,36 @@
 					<header class="container-header">
 					Опыт работы
 					</header>
-					<div class="infobox-body">
+					<div class="infobox-body / exp">
 						<ul class="infobox-list">
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-bag"></i>
 								</div>
+								<div class="item-info / cf">
 									<p class="where">"ИП Савельев" - Продавец дисков</p>
 									<p class="period">Сентябрь 2002 - Август 2006</p>
+								</div>	
 							</li>
 							
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-bag"></i>
 								</div>
+								<div class="item-info / cf">
 									<p class="where">МГОГИ - Ведущщий программист</p>
-									<p class="period">Ноябрь 2010 - март 2015 
+									<p class="period">Ноябрь 2010 - март 2015</p>
+								</div>	 
 							</li>
 							
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-bag"></i>
 								</div>
+								<div class="item-info / cf">
 									<p class="where">"ООО Системы безопастности" - Системный администратор</p>
 									<p class="period">Июнь 2008 - Июль 2010</p>
+								</div>	
 							</li>
 						</ul>
 					</div>	
@@ -223,48 +229,57 @@
 					<header class="container-header">
 					Образование
 					</header>
-					<div class="infobox-body">
+					<div class="infobox-body  / edu">
 						<ul class="infobox-list">
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-pan"></i>
 								</div>
+								<div class="item-info / cf">
 									<p class="where">Полное среднее. Школа №25</p>
 									<p class="period">1989-1999</p>
-							</li>
-							
-							<li class="infobox-item">
-								<div class="float-left / icon">
-									<i class="icon-hat"></i>
-								</div>
-									<p class="where">Среднее-специальное. ОЗГППК</p>
-									<p class="period">1999-2001
-									</p> 
+								</div>		
 							</li>
 
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-hat"></i>
 								</div>
-									<p class="where">Высшее. МГОГИ</p>
+								<div class="item-info / cf">
+									<p class="where">Среднее-специальное. ОЗГППК</p>
+									<p class="period">1999-2001
+									</p> 
+								</div>	
+							</li>
+
+							<li class="infobox-item">
+								<div class="float-left / icon">
+									<i class="icon-hat"></i>
+								</div>
+								<div class="item-info / cf">
+									<p class="where">Высшее. МГОГИ
+									</p>
 									<p class="period">2007-2012
 									</p> 
+								</div>	
 							</li>
 							
 							<li class="infobox-item">
 								<div class="float-left / icon">
 									<i class="icon-list"></i>
 								</div>
+								<div class="item-info / cf">
 									<p class="where">Курсы Loftschool.ru</p>
 									<p class="period">Сентябрь 2015 - по настоящее время</p>
+								</div>	
 							</li>
 						</ul>
 					</div>	
 				</section>
 			</div> <!-- end info -->
 
-			<div class="bottom-contacts-wrap / hide / cf">
-				<div class="bottom-contacts  / cf">
+			<div class="bottom-contacts-wrap / hide">
+				<div class="bottom-contacts">
 					<addres class="contacts ">	
 						<ul class="contacts-list">
 							<li class="contacts-item / contacts-item-mail">
@@ -294,11 +309,9 @@
 								</a>
 							</li>
 						</ul>
-					</addres>				
-				</div>
-				
-				
-				<ul class="social-icons  / cf">
+					</addres>
+
+					<ul class="social-icons">
 					<li class="social-item">
 					<a href="/" class="social-link icon-fb"></a>
 					</li>
@@ -311,8 +324,8 @@
 					<li class="social-item">
 					<a href="/" class="social-link icon-git"></a>
 					</li>
-				</ul>
-				
+					</ul>				
+				</div>		
 			</div> <!-- end bottom-contacts -->
 		</div> <!-- end container -->
 	</div>	<!-- end main -->
@@ -320,7 +333,10 @@
 	<footer class="base-footer include__full">
 		<div class="container">				
 			<div class="lock">
-				<a href="/login.html"><i class="icon-lock"></i> <strong>ВХОД</strong> <i class="icon-unlock / hide"></i></a>
+				<a href="/login.html">
+					<i class="icon-lock"></i>
+					<strong>ВХОД</strong>
+				</a>
 			</div>
 			<p class="copyright text-center">
 				© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!

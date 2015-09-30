@@ -30,6 +30,14 @@
 	}
 }	
 
+.icon-lock {
+	padding-right: 25px;
+	&:hover{
+		background-image: url(../img/sprite.png);
+  		background-position: -180px -180px;
+	}
+}
+
 .contacts-item{
 	&:hover{
 		@extend %hoverCont;
@@ -41,4 +49,22 @@
 	&:hover{
 			@extend %hoverNav;
 		}
+}
+
+.myWork-image{
+	&:hover{
+		color: #c4c3c3;
+	}
+}
+
+.sub{
+	&:hover{
+		background-color: #48b79b;
+	}
+}
+
+.clr{
+	&:hover{
+		background-color: #cccaca;
+	}
 }

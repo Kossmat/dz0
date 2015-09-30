@@ -54,11 +54,15 @@
 }
 
 .worksheet-wrap{
+	@include full;
 	padding: 20px;
 	padding-top: 0;
 	text-align: left
 }
 
+.image-wrap{
+	@include full;
+}
 
 .avatar-box{
 	display: inline-block;
@@ -95,14 +99,20 @@ bottom-contacts{
 	height: 44px;
 	margin-bottom: 10px;
 }
+
+.item-info{
+	margin-left: 0;
+}
 /* ***************** */
 .bottom-contacts-wrap{
+	@include full;
 	.contacts{
 		.contacts-link{
 			font-size: 24px;
 		}
 	}
 	.social-icons{
+		@include container;
 		display: block;
 		margin: 100px 0;
 	}
