@@ -1656,19 +1656,20 @@ Icon classes can be used entirely standalone. They are named after their origina
   font-size: 0;
   display: inline-block; }
 
-/************************/
+/***********************/
 .addpro {
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; }
+  /*height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);*/ }
+
+#element_to_pop_up {
+  display: none; }
 
 .addpro-wrap {
+  position: absolute;
+  top: 30%;
+  left: 40%;
   /**/
   /**/ }
 
@@ -1709,10 +1710,11 @@ Icon classes can be used entirely standalone. They are named after their origina
   position: relative;
   float: right;
   top: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
 
 .addpro #textarea {
-  width: 320px; }
+  width: 320px;
+  font-size: 11px; }
 
 .addpro .addpro-button {
   padding: 0;
@@ -1731,7 +1733,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-repeat: no-repeat, repeat-x;
   background-position: 15px 12px, 0 0; }
 
-/* #element_to_pop_up { display:none; }*/
 /*.sucsess_window {
     width: 364px;
     min-height: 70px;
