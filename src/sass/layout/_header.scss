@@ -4,10 +4,10 @@
 	// padding: 10px 0;
 	border-bottom: 7px solid $color-white;
 
+
+
 	.logo{
-		height: 70px;
-		width: 95px;
-		margin: 10px 0 3px 0;
+		
 	}	
 
 	.social-icons{
@@ -28,5 +28,10 @@
 	}
 }
 
-
+.logo-wrap{
+	height: 70px;
+	width: 95px;
+	display: inline-block;
+	margin: 13px 0 3px 0;
+}
 /* end base-header */

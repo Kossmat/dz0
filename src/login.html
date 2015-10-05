@@ -11,11 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <!-- endbuild -->
 
-    <!-- build:css css/style.css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- build:css css/login.css -->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <!-- endbuild -->
 
-    <script src ="apps/jquery/dist/jquery.min.js"></script>
+    <script src ="js/jquery-1.11.2.min.js"></script>
 
     <!-- build:js js/vendor.js -->
     <script src="apps/html5shiv/dist/html5shiv-printshiv.min.js"></script>
@@ -33,17 +33,38 @@
 <p class="browsehappy">Вы используте <strong>устаревший</strong> браузер. Пожалуйста <a href="browsehappy.com">обновите</a> его</p>
 <![endif] -->
 <div class="wrapper">
-    <div class="main / include__full / clearfix">
+    <div class="main / include__full">
         <div class="container">
-            <h1>ТРОлоло</h1>
-            <form action="">
-                
-            </form>
+            <div class="login / login-wrap">
+                <p class="name-form">Авторизуйтесь</p>
+                <form class="login-form" action="">
+                    <label class="login-field" for="">
+                        <i class="icon-mail_f"></i>
+                        <input class="input" type="text" name="login" placeholder="Введите Email">
+                    </label>
+
+                    <label class="login-field" for="">
+                        <i class="icon-key_f"></i>
+                        <input class="input" type="password" name="password" placeholder="Введите пароль">
+                    </label>
+                    
+                    <label class="check" for="">
+                    <input class="remember" type="checkbox" name="remember">
+                    
+                        Запомнить меня?
+                    </label>
+
+                    <label class="btn-wrap" for="">
+                    <input type="submit" placeholder
+value="Войти" class="btn / sub">
+                    </label>
+                </form>
+            </div>
         </div>
     </div>  <!-- end main -->
 </div>
-
-<footer class="base-footer / include__full">
+<!-- <div class="layout_footer"></div> -->
+<footer class="base-footer / include__full / fixid-bottom-footer">
     <div class="container">             
         <div class="lock">
             <a href="/login.html">
@@ -56,3 +77,5 @@
         </p>
     </div>
 </footer> <!-- end footer -->
+</body>
+</html>
