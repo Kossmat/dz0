@@ -1,24 +1,23 @@
 .icon-fb{
 	&:hover{
 		background-image: url(../img/sprite.png);
-  		background-position: -60px -60px;
+  		background-position: 0px -120px;
+  		transition: top 2s ease-out 0.5s
 	}
 }
 
 .icon-vk{
 	&:hover{
-		// background: url(../img/sprite.png) -120px 0px;
 		background-image: url(../img/sprite.png);
-		background-position: 0px -120px;
+		background-position: -60px -120px;
 	}
 }	
 
 
 .icon-tw{
 	&:hover{
-		// background: url(../img/sprite.png) -60px -120px;
 		background-image: url(../img/sprite.png);
-  		background-position: -60px -120px;
+  		background-position: -60px -60px;
 	}
 }	
 
@@ -34,7 +33,7 @@
 	padding-right: 25px;
 	&:hover{
 		background-image: url(../img/sprite.png);
-  		background-position: -180px -180px;
+  		background-position: -241px -175px;
 	}
 }
 
@@ -43,7 +42,16 @@
 		@extend %hoverCont;
 		// color: #000;
 	}
-}			
+}	
+
+/***************************/
+.myWork-item.addnew{
+	opacity: 1;
+	&:hover{
+		opacity: 0.8;
+		background-color: #dad8d8;
+	}
+}		
 
 .navigation-item{
 	&:hover{
@@ -51,11 +59,6 @@
 		}
 }
 
-.myWork-image{
-	&:hover{
-		color: #c4c3c3;
-	}
-}
 
 .sub{
 	&:hover{
@@ -68,3 +71,56 @@
 		background-color: #cccaca;
 	}
 }
+
+/**************************/
+.myWork-image_wrap{
+	position: relative;
+}
+
+.myWork-image{
+	width: 100%;
+  	height: 100%;
+}
+
+.myWork-image_hover{
+	width: 160px;
+	height: 114px;
+	overflow: hidden;
+
+	&:_hover{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.myWork-look {
+	text-align: center;
+	padding-top: 50px;
+	display: block;
+	font-size: 14px;
+
+    text-align: center;
+    line-height: 22px;
+    height: 22px;
+    margin-top: 48px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+  	left: 0px;
+  	width: 100%;
+  	height: 100%;
+    color: #fff;
+    opacity: 0;
+    border-radius: 3px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.3s linear 0s;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+/**************************/
+

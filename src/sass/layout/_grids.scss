@@ -5,12 +5,26 @@
 @import "../apps/susy/sass/susy";
 
 $susy: (
+    output: float,
   	columns: 12,
   	gutters: .25,
   	math: fluid,
-  	output: float,
+    column-width: false,
+    container: auto,
+    container-position: center,
 	use-custom: (rem: true)
 );
+
+/*$susy: (
+  math: static,
+  columns: 12,
+  column-width: 66px,
+  container-position: center,
+  gutters: 1/4,
+  use-custom: (rem: true)
+);*/
+
+// @include layout(12 1/4 inside-static);
 
 @include border-box-sizing;
 
@@ -29,6 +43,10 @@ $susy: (
 }
 /* ******** */
 
+.main{
+  // @include container($susy);
+}
+
 .container-base-header{
 	@include container(1200px);
 }
@@ -37,12 +55,15 @@ $susy: (
 .menu{
 	@include span(3.2);
 	max-width: 250px;
+  float: left;
+  display: inline-block;
 }
 
 .info{
 	@include span(8.2);
 	margin-right: 0%;
 	max-width: 650px;
+  display: inline-block;
 }
 
 .lead{
@@ -63,14 +84,19 @@ $susy: (
     @include container;
 }
 
-.form-group{
-    @include span(4);
-}
+// .form-group{
+//     @include span(5);
+// }
 
-.check{
+/*.check{
     @include span(10);
-}
+}*/
 
+/******* Page2 ****/
+.myWork-item{
+    @include gallery(1 of 3);
+}
+/****************/
 .copyright{
 
 }

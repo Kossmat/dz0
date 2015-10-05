@@ -1,0 +1,125 @@
+<html lang="ru" >
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Модальное окно на CSS3 | Материалы сайта RUSELLER.COM</title>
+
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/modal.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+    <!-- Панель с кнопками -->
+
+    <div class="main">
+
+        <div class="panel">
+
+            <a href="#login_form" id="login_pop">Войти</a>
+
+            <a href="#join_form" id="join_pop">Регистрация</a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- Форма №1 для модального окна -->
+
+    <a href="#x" class="overlay" id="login_form"></a>
+
+    <div class="popup">
+
+        <h2>Здравствуй, Гость!</h2>
+
+        <p>Вводи свой псевдоним и пароль</p>
+
+        <div>
+
+            <label for="login">Псевдоним</label>
+
+            <input type="text" id="login" value="" />
+
+        </div>
+
+        <div>
+
+            <label for="password">Пароль</label>
+
+            <input type="password" id="password" value="" />
+
+        </div>
+
+        <input type="button" value="Войти" />
+
+
+
+        <a class="close" href="#close"></a>
+
+    </div>
+
+
+
+    <!-- Форма №2 для модального окна -->
+
+    <a href="#x" class="overlay" id="join_form"></a>
+
+    <div class="popup">
+
+        <h2>Регистрация</h2>
+
+        <p>Нужно о себе кое-что рассказать</p>
+
+        <div>
+
+            <label for="email">Псевдоним (email)</label>
+
+            <input type="text" id="email" value="" />
+
+        </div>
+
+        <div>
+
+            <label for="pass">Пароль</label>
+
+            <input type="password" id="pass" value="" />
+
+        </div>
+
+        <div>
+
+            <label for="firstname">Имя</label>
+
+            <input type="text" id="firstname" value="" />
+
+        </div>
+
+        <div>
+
+            <label for="lastname">Фамилия</label>
+
+            <input type="text" id="lastname" value="" />
+
+        </div>
+
+        <input type="button" value="Регистрация" />&nbsp;&nbsp;&nbsp;или&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Войти</a>
+
+
+
+        <a class="close" href="#close"></a>
+
+    </div>
+
+</body>
+
+</html>

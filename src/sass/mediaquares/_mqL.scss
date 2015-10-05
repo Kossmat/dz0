@@ -1,7 +1,7 @@
 @include MQ(L) {
 // 800px to 1024
 .container{
-	@include container(790px);
+	@include container(650px);
 }
 /* ******** */ 
 /* ***************** */
@@ -47,6 +47,16 @@
         font-size: 12px;
         margin-left: 15px;
     }
+}
+
+.fixid-bottom-footer{
+    // position: relative;
+}
+
+
+.lock{
+    padding-left: 20px;
+    width: 200px;
 }
 
 .hide{

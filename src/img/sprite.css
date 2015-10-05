@@ -11,37 +11,55 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-bag {
   background-image: url(sprite.png);
-  background-position: -90px -180px;
+  background-position: -150px -180px;
   width: 25px;
   height: 20px;
 }
 .icon-burger {
   background-image: url(sprite.png);
-  background-position: -180px -114px;
+  background-position: -105px -180px;
   width: 25px;
   height: 21px;
 }
+.icon-check_f {
+  background-image: url(sprite.png);
+  background-position: -189px -237px;
+  width: 10px;
+  height: 8px;
+}
+.icon-cloud {
+  background-image: url(sprite.png);
+  background-position: -241px -138px;
+  width: 25px;
+  height: 17px;
+}
 .icon-col {
   background-image: url(sprite.png);
-  background-position: -239px -58px;
+  background-position: -286px 0px;
   width: 9px;
   height: 18px;
 }
 .icon-coroner {
   background-image: url(sprite.png);
-  background-position: -239px 0px;
+  background-position: -241px -80px;
   width: 10px;
   height: 38px;
 }
+.icon-crest {
+  background-image: url(sprite.png);
+  background-position: -155px -237px;
+  width: 14px;
+  height: 13px;
+}
 .icon-fb-hover {
   background-image: url(sprite.png);
-  background-position: -60px -60px;
+  background-position: 0px -120px;
   width: 40px;
   height: 40px;
 }
 .icon-fb {
   background-image: url(sprite.png);
-  background-position: -120px 0px;
+  background-position: 0px 0px;
   width: 40px;
   height: 40px;
 }
@@ -53,49 +71,61 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-git {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: -120px 0px;
   width: 40px;
   height: 40px;
 }
 .icon-hat {
   background-image: url(sprite.png);
-  background-position: -135px -180px;
+  background-position: -241px 0px;
   width: 25px;
   height: 20px;
 }
+.icon-key_f {
+  background-image: url(sprite.png);
+  background-position: -180px 0px;
+  width: 41px;
+  height: 36px;
+}
 .icon-list {
   background-image: url(sprite.png);
-  background-position: 0px -180px;
+  background-position: -195px -180px;
   width: 25px;
   height: 20px;
 }
 .icon-lock {
   background-image: url(sprite.png);
-  background-position: -120px -220px;
+  background-position: -120px -237px;
   width: 15px;
   height: 19px;
 }
 .icon-mail {
   background-image: url(sprite.png);
-  background-position: -80px -220px;
+  background-position: -40px -237px;
   width: 20px;
   height: 20px;
 }
 .icon-mail_c {
   background-image: url(sprite.png);
-  background-position: -180px 0px;
+  background-position: 0px -180px;
   width: 39px;
   height: 37px;
 }
+.icon-mail_f {
+  background-image: url(sprite.png);
+  background-position: -180px -56px;
+  width: 41px;
+  height: 36px;
+}
 .icon-pan {
   background-image: url(sprite.png);
-  background-position: -45px -180px;
+  background-position: -241px -40px;
   width: 25px;
   height: 20px;
 }
 .icon-phone {
   background-image: url(sprite.png);
-  background-position: -40px -220px;
+  background-position: 0px -237px;
   width: 20px;
   height: 20px;
 }
@@ -105,21 +135,27 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 39px;
   height: 38px;
 }
+.icon-polaroid {
+  background-image: url(sprite.png);
+  background-position: -59px -180px;
+  width: 26px;
+  height: 27px;
+}
 .icon-skype {
   background-image: url(sprite.png);
-  background-position: 0px -220px;
+  background-position: -80px -237px;
   width: 20px;
   height: 20px;
 }
 .icon-skype_c {
   background-image: url(sprite.png);
-  background-position: -180px -57px;
+  background-position: -180px -112px;
   width: 39px;
   height: 37px;
 }
 .icon-tw-hover {
   background-image: url(sprite.png);
-  background-position: -60px -120px;
+  background-position: -60px -60px;
   width: 40px;
   height: 40px;
 }
@@ -131,13 +167,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-unlock {
   background-image: url(sprite.png);
-  background-position: -180px -180px;
+  background-position: -241px -175px;
   width: 22px;
   height: 19px;
 }
 .icon-vk-hover {
   background-image: url(sprite.png);
-  background-position: 0px -120px;
+  background-position: -60px -120px;
   width: 40px;
   height: 40px;
 }

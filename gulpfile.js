@@ -127,7 +127,7 @@ gulp.task('html:build', function () {
     // conditionals: true,
     // spare:true
     // };
-    return gulp.src('src/index.html')
+    return gulp.src('src/mywork.html')
         .pipe(plumber())
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
@@ -175,7 +175,7 @@ gulp.task('sass:build', function () {
         //     html: glob.sync('src/index.html')
         // }))
         ///
-        .pipe(minifyCSS())
+        //.pipe(minifyCSS())
         .pipe(sourcemaps.write('./map'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));

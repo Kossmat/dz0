@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
   height: 100%;
 }
 
@@ -11,7 +11,7 @@ html, body {
 
 .layout_footer{
 	height: 80px;
-}
+}*/
 /***************************/
 .base-footer{
 	background-color: #eff3f7;
@@ -19,7 +19,7 @@ html, body {
 
 	position: relative;
 	clear: both;
-    height: 80px;
+    min-height: 80px;
 }
 
 
@@ -53,3 +53,7 @@ icon-lock{
   	float: left;
 }
 
+.fixid-bottom-footer{
+    position: fixed;
+    bottom: 0;
+}

@@ -1,6 +1,6 @@
 .menu{
 	// background-color: #eff3f7;
-	margin:0 60px 25px 0;
+	margin:0 64px 25px 0;
 	color: $color-paragraph;
 }
 
@@ -13,24 +13,51 @@
 	} 		
 		.navigation-list{
 			color: #727070;
+
+			/*&:link{
+				// @extend %usualNav;
+			}
+
+			&:visited{
+				// @extend %green;
+			}	
 			
+			&:hover{
+				@extend %hoverNav;
+			}
+
+			&:active{
+				@extend %green;
+				// border-top-left-radius: 3px;
+				// border-top-right-radius: 3px;
+				color: #1e7465;
+				// padding: 12px 18px;
+			}*/
 		}
 		.navigation-item.active{
 			@extend %green;
 			border-top-left-radius: 3px;
 			border-top-right-radius: 3px;
 			color: #1e7465;
-			padding: 10px 20px;
+			padding: 12px 18px;
 		}
 
 		.navigation-item{
 			@extend %usualNav;
 			font-size: 21px;
-			padding: 12px 20px;
+			padding: 12px 18px;
 
-			&:hover{
+			/*&:hover{
 				@extend %hoverNav;
 			}
+
+			&:active{
+				@extend %green;
+				// border-top-left-radius: 3px;
+				// border-top-right-radius: 3px;
+				color: #1e7465;
+				// padding: 12px 18px;
+			}*/
 
 			&:last-child{
 				border-radius: 0 0 5px 5px;
@@ -43,7 +70,7 @@
 
 		.contacts-header{
 				@extend %yellow;
-				padding: 5px 0px 10px 17px;
+				padding: 5px 0px 8px 17px;
 				font-size: 20px;	
 				border-radius: 5px 5px 0 0;
     			box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
