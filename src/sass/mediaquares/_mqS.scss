@@ -4,6 +4,13 @@
 	@include container(400px);
 }
 
+.wrapper{
+	margin-bottom: 0;
+}
+
+.main{
+	padding-bottom: 0;
+}
 
 /* ***************** */
 .base-header{
@@ -105,18 +112,84 @@ bottom-contacts{
 	margin-left: 0;
 	padding-left: 0;
 }
+
+/* ***************** */
+.myWork{
+	padding-bottom: 160px;
+	margin-bottom: 20px !important;
+}
+
+.myWork-wrap{
+	padding: 20px 60px !important;
+}
+
+.myWork-item{
+    @include gallery(1 of 1);
+    clear: both !important;
+    width: 280px;
+}
+
+.myWork-image_hover {
+    width: 278px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.addnew{
+	display: none;
+}
+/* ***************** */
+/* ********Callback********* */
+
+.callback-wrap {
+    padding: 20px 60px !important;
+}
+
+.form-group{
+	width: 100%;
+	display: block !important;
+}
+
+.input{
+	width: 280px !important;
+}
+
+.input-code{
+	.input{
+		width: 43% !important;
+	}
+	.capture {
+		padding-right: 10px !important;
+		img{
+			display: inline-block;
+			width: 144px;
+			height: 70px;
+		}
+	}	
+}
+
+.btn-group{
+	.sub, .clr{
+		margin: 0;
+	}
+}
+
+/* ***************** */
 /* ***************** */
 .bottom-contacts-wrap{
 	@include full;
 	.contacts{
+		// @include clearfix;
 		.contacts-link{
 			font-size: 24px;
 		}
 	}
 	.social-icons{
-		@include container;
 		display: block;
-		margin: 100px 0;
+		float: none;
+	}
+	.social-item{
+		margin: 0 13px;
 	}
 }
 /* ***************** */

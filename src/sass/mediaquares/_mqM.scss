@@ -4,6 +4,15 @@
 	@include container(640px);
 }
 /* ******** */ 
+.wrapper{
+	// margin-top: 90px;
+	margin-bottom: 0;
+	// padding-bottom: 200px;
+}
+
+.main{
+	padding-bottom: 40px;
+}
 /* ***************** */
 .base-header{
 
@@ -19,8 +28,13 @@
 
 .info{
 	@include full;
+	max-width: 642px;
 }
 
+
+.container-header{
+	padding: 10px 40px;
+}
 
 .worksheet-what,
 .worksheet-info,
@@ -41,9 +55,13 @@
 		display: inline-block;
 		@include span(33.3333%);
 		margin-right: 0;
-		
+		border-right: 2px solid #d6d5d3;
+		padding-right: 0;
+		font-size: 11px;
+	
 		&:last-child{
 			border-radius: 0;
+			border-right: none;
 		}
 	}
 
@@ -61,4 +79,66 @@
 .hide{
 		display: block;
 	}
+/* ***************** */
+
+
+
+/* ***************** */
+.icon{
+	display: inline-block;
+	text-align: center;
+	width: 44px;
+	height: 44px;
+	margin-bottom: 10px;
+	padding: 12px 10px 13px;
+}
+/* **** myWork *** */
+.myWork{
+	margin-bottom: 60px;
+}
+
+.myWork-wrap{
+	padding: 30px 90px !important;
+}
+
+.myWork-item{
+    @include gallery(2 of 4);
+    width: 190px;
+
+    &:nth-child(2n + 2) {
+    	margin-left: 56.63158%;
+	}
+}
+
+.myWork-image_hover {
+    width: 188px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.myWork-caption_text{
+	padding: 15px 8px !important;
+}
+
+.addnew .icon {
+	width: 60px;
+	margin: 25px auto !important;
+	.icon-polaroid {
+		background-position: -56px -180px;
+	}
+}
+
+.capture {
+		padding-right: 14px !important;
+}
+
+.bottom-contacts .social-icons{
+	display: none;
+}
+
+	.hide{
+		display: block;
+	}
+
 }/* end M */
+

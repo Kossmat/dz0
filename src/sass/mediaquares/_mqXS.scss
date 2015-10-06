@@ -2,8 +2,18 @@
 
 @include MQ(XS){
 .container{
-	@include container(280px);
+	@include container(300px);
 }
+
+/* ******** */ 
+.wrapper{
+	margin-bottom: 0;
+}
+
+.main{
+	padding-bottom: 0;
+}
+/* ***************** */
 
 /* ***************** */
 .base-header{
@@ -34,7 +44,7 @@
 /* ***************** */
 
 .container-header {
-	padding-left: 0;
+	padding: 10px 60px;
 }
 
 .info{
@@ -110,6 +120,47 @@ bottom-contacts{
 	margin-left: 0;
 	padding-left: 0;
 }
+
+/* ***************** */
+.myWork{
+	margin-bottom: 20px !important;
+}
+
+.myWork-wrap{
+	padding: 20px  !important;
+}
+
+.myWork-item{
+    @include gallery(1 of 1);
+    width: 260px;
+    clear: both !important;
+}
+
+.myWork-image_hover {
+    width: 258px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.addnew{
+	display: none;
+}
+
+
+/* ********Callback********* */
+.callback .container-header{
+	font-size: 19px;
+}
+
+.callback-wrap {
+    padding: 60px !important;
+    padding-top: 20px !important;
+    padding-bottom: 100px !important;
+}
+
+.callback .clr{
+	margin: 40px;
+}
 /* ***************** */
 .bottom-contacts-wrap{
 	@include full;
@@ -119,16 +170,16 @@ bottom-contacts{
 		}
 	}
 	.social-icons{
-		@include container;
 		display: block;
-		margin: 100px 0;
+		float: none;
 	}
+
+    .social-item{
+        margin: 0;
+    }
 }
 /* ***************** */
 
-.social-icons{
-	display: block;
-}
 
 .copyright{
 	font-size: 8px;

@@ -39,6 +39,8 @@
     // width: 40%;
     &:focus{
         border-color: #ef9d82;
+        outline-color: #ef9d82;
+        outline-offset: 0;
     }
     &:hover{
         border-color: #61cfb0;

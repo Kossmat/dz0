@@ -10,21 +10,22 @@
 		
 	}	
 
-	.social-icons{
-		float: right;
-		padding: 25px 0 14px;
-		.social-item{
-			margin-left: 10px;
-			display: inline-block;
-		}
-
-		.social-link{
-			display: inline-block;
-		}
-	}
 
 	.menu-burger{
 		display: none;
+	}
+}
+
+.social-icons{
+	float: right;
+	padding: 25px 0 14px;
+	.social-item{
+		margin-left: 10px;
+		display: inline-block;
+	}
+
+	.social-link{
+		display: inline-block;
 	}
 }
 
