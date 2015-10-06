@@ -44,7 +44,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: url("../img/back.jpg") no-repeat;
+  background-size: cover; }
 
 .wrapper {
   margin-bottom: 50px; }
@@ -576,30 +578,67 @@ th {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbf9f9+0,e9e7e7+100 */ }
 
 .icon-fb:hover {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -120px;
+  background-position: -360px -60px;
   -webkit-transition: top 2s ease-out 0.5s;
   -moz-transition: top 2s ease-out 0.5s;
   transition: top 2s ease-out 0.5s; }
 
 .icon-vk:hover {
   background-image: url(../img/sprite.png);
-  background-position: -60px -120px; }
+  background-position: -360px -180px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
 
 .icon-tw:hover {
   background-image: url(../img/sprite.png);
-  background-position: -60px -60px; }
+  background-position: -360px 0px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
 
 .icon-git:hover {
   background-image: url(../img/sprite.png);
-  background-position: -120px -60px; }
+  background-position: -192px -257px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
 
 .icon-lock {
   padding-right: 25px; }
   .icon-lock:hover {
     background-image: url(../img/sprite.png);
-    background-position: -241px -175px; }
+    background-position: -312px -257px;
+    -webkit-transition: top 2s ease-out 0.5s;
+    -moz-transition: top 2s ease-out 0.5s;
+    transition: top 2s ease-out 0.5s; }
 
+/* ******* */
+.icon-vk_mob:hover {
+  background-position: 0px -96px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
+
+.icon-tw_mob:hover {
+  background-position: -180px 0px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
+
+.icon-git_mob:hover {
+  background-position: -180px -96px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
+
+.icon-fb_mob:hover {
+  background-position: -270px -96px;
+  -webkit-transition: top 2s ease-out 0.5s;
+  -moz-transition: top 2s ease-out 0.5s;
+  transition: top 2s ease-out 0.5s; }
+
+/* ******* */
 /***************************/
 .myWork-item.addnew {
   opacity: 1; }
@@ -784,16 +823,17 @@ th {
   background-image: url(../img/pattern.png);
   color: #fff;
   border-bottom: 7px solid #fff; }
-  .base-header .social-icons {
-    float: right;
-    padding: 25px 0 14px; }
-    .base-header .social-icons .social-item {
-      margin-left: 10px;
-      display: inline-block; }
-    .base-header .social-icons .social-link {
-      display: inline-block; }
   .base-header .menu-burger {
     display: none; }
+
+.social-icons {
+  float: right;
+  padding: 25px 0 14px; }
+  .social-icons .social-item {
+    margin-left: 10px;
+    display: inline-block; }
+  .social-icons .social-link {
+    display: inline-block; }
 
 .logo-wrap {
   height: 70px;
@@ -1101,13 +1141,19 @@ icon-lock {
 /***********************************/
 @media only screen and (min-width: 288px) and (max-width: 479px) {
   .container {
-    max-width: 280px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto; }
     .container:after {
       content: " ";
       display: block;
       clear: both; }
+  /* ******** */
+  .wrapper {
+    margin-bottom: 0; }
+  .main {
+    padding-bottom: 0; }
+  /* ***************** */
   /* ***************** */
   .base-header .social-icons {
     display: none; }
@@ -1134,7 +1180,7 @@ icon-lock {
       border-top-color: white; }
   /* ***************** */
   .container-header {
-    padding-left: 0; }
+    padding: 10px 60px; }
   .info {
     clear: both;
     width: 100%;
@@ -1190,6 +1236,35 @@ icon-lock {
     margin-left: 0;
     padding-left: 0; }
   /* ***************** */
+  .myWork {
+    margin-bottom: 20px !important; }
+  .myWork-wrap {
+    padding: 20px  !important; }
+  .myWork-item {
+    width: 100%;
+    float: left;
+    width: 260px;
+    clear: both !important; }
+    .myWork-item:nth-child(1n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: none; }
+  .myWork-image_hover {
+    width: 258px;
+    height: 180px;
+    overflow: hidden; }
+  .addnew {
+    display: none; }
+  /* ********Callback********* */
+  .callback .container-header {
+    font-size: 19px; }
+  .callback-wrap {
+    padding: 60px !important;
+    padding-top: 20px !important;
+    padding-bottom: 100px !important; }
+  .callback .clr {
+    margin: 40px; }
+  /* ***************** */
   .bottom-contacts-wrap {
     clear: both;
     width: 100%;
@@ -1199,18 +1274,11 @@ icon-lock {
     .bottom-contacts-wrap .contacts .contacts-link {
       font-size: 17px; }
     .bottom-contacts-wrap .social-icons {
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       display: block;
-      margin: 100px 0; }
-      .bottom-contacts-wrap .social-icons:after {
-        content: " ";
-        display: block;
-        clear: both; }
+      float: none; }
+    .bottom-contacts-wrap .social-item {
+      margin: 0; }
   /* ***************** */
-  .social-icons {
-    display: block; }
   .copyright {
     font-size: 8px;
     font-family: 'open_sanslight', sans-serif; }
@@ -1234,6 +1302,10 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
+  .wrapper {
+    margin-bottom: 0; }
+  .main {
+    padding-bottom: 0; }
   /* ***************** */
   .base-header .social-icons {
     display: none; }
@@ -1314,6 +1386,47 @@ icon-lock {
     margin-left: 0;
     padding-left: 0; }
   /* ***************** */
+  .myWork {
+    padding-bottom: 160px;
+    margin-bottom: 20px !important; }
+  .myWork-wrap {
+    padding: 20px 60px !important; }
+  .myWork-item {
+    width: 100%;
+    float: left;
+    clear: both !important;
+    width: 280px; }
+    .myWork-item:nth-child(1n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: none; }
+  .myWork-image_hover {
+    width: 278px;
+    height: 200px;
+    overflow: hidden; }
+  .addnew {
+    display: none; }
+  /* ***************** */
+  /* ********Callback********* */
+  .callback-wrap {
+    padding: 20px 60px !important; }
+  .form-group {
+    width: 100%;
+    display: block !important; }
+  .input {
+    width: 280px !important; }
+  .input-code .input {
+    width: 43% !important; }
+  .input-code .capture {
+    padding-right: 10px !important; }
+    .input-code .capture img {
+      display: inline-block;
+      width: 144px;
+      height: 70px; }
+  .btn-group .sub, .btn-group .clr {
+    margin: 0; }
+  /* ***************** */
+  /* ***************** */
   .bottom-contacts-wrap {
     clear: both;
     width: 100%;
@@ -1323,15 +1436,10 @@ icon-lock {
     .bottom-contacts-wrap .contacts .contacts-link {
       font-size: 24px; }
     .bottom-contacts-wrap .social-icons {
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       display: block;
-      margin: 100px 0; }
-      .bottom-contacts-wrap .social-icons:after {
-        content: " ";
-        display: block;
-        clear: both; }
+      float: none; }
+    .bottom-contacts-wrap .social-item {
+      margin: 0 13px; }
   /* ***************** */
   .icon-unlock {
     display: none; }
@@ -1357,6 +1465,10 @@ icon-lock {
       display: block;
       clear: both; }
   /* ******** */
+  .wrapper {
+    margin-bottom: 0; }
+  .main {
+    padding-bottom: 40px; }
   /* ***************** */
   .container-base-header {
     max-width: 688px;
@@ -1374,7 +1486,10 @@ icon-lock {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    max-width: 642px; }
+  .container-header {
+    padding: 10px 40px; }
   .worksheet-what,
   .worksheet-info,
   .where {
@@ -1392,9 +1507,13 @@ icon-lock {
     width: 33.3333%;
     float: left;
     margin-right: 1.69492%;
-    margin-right: 0; }
+    margin-right: 0;
+    border-right: 2px solid #d6d5d3;
+    padding-right: 0;
+    font-size: 11px; }
     .contacts .contacts-item:last-child {
-      border-radius: 0; }
+      border-radius: 0;
+      border-right: none; }
   .contacts .contacts-link {
     font-size: 12px;
     margin-left: 15px; }
@@ -1402,6 +1521,52 @@ icon-lock {
     padding-left: 20px;
     width: 150px; }
   /* ***************** */
+  .hide {
+    display: block; }
+  /* ***************** */
+  /* ***************** */
+  .icon {
+    display: inline-block;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+    padding: 12px 10px 13px; }
+  /* **** myWork *** */
+  .myWork {
+    margin-bottom: 60px; }
+  .myWork-wrap {
+    padding: 30px 90px !important; }
+  .myWork-item {
+    width: 47.36842%;
+    float: left;
+    width: 190px; }
+    .myWork-item:nth-child(2n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .myWork-item:nth-child(2n + 2) {
+      margin-left: 52.63158%;
+      margin-right: -100%;
+      clear: none; }
+    .myWork-item:nth-child(2n + 2) {
+      margin-left: 56.63158%; }
+  .myWork-image_hover {
+    width: 188px;
+    height: 140px;
+    overflow: hidden; }
+  .myWork-caption_text {
+    padding: 15px 8px !important; }
+  .addnew .icon {
+    width: 60px;
+    margin: 25px auto !important; }
+    .addnew .icon .icon-polaroid {
+      background-position: -56px -180px; }
+  .capture {
+    padding-right: 14px !important; }
+  .bottom-contacts .social-icons {
+    display: none; }
   .hide {
     display: block; } }
 
@@ -1447,6 +1612,8 @@ icon-lock {
   .contacts .contacts-link {
     font-size: 12px;
     margin-left: 15px; }
+  .bottom-contacts .social-icons {
+    display: none; }
   .lock {
     padding-left: 20px;
     width: 200px; }
@@ -1468,177 +1635,225 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-bag {
   background-image: url(../img/sprite.png);
-  background-position: -150px -180px;
+  background-position: -420px -322px;
   width: 25px;
   height: 20px; }
 
 .icon-burger {
   background-image: url(../img/sprite.png);
-  background-position: -105px -180px;
+  background-position: -420px -161px;
   width: 25px;
   height: 21px; }
 
 .icon-check_f {
   background-image: url(../img/sprite.png);
-  background-position: -189px -237px;
+  background-position: -191px -317px;
   width: 10px;
   height: 8px; }
 
+.icon-cloud-b {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -257px;
+  width: 52px;
+  height: 40px; }
+
 .icon-cloud {
   background-image: url(../img/sprite.png);
-  background-position: -241px -138px;
-  width: 25px;
-  height: 17px; }
+  background-position: -273px -192px;
+  width: 52px;
+  height: 40px; }
 
 .icon-col {
-  background-image: url(../img/sprite.png);
-  background-position: -286px 0px;
+  background-image: url(sprite.png);
+  background-position: 0px -373px;
   width: 9px;
   height: 18px; }
 
-.icon-coroner {
-  background-image: url(../img/sprite.png);
-  background-position: -241px -80px;
-  width: 10px;
-  height: 38px; }
-
 .icon-crest {
   background-image: url(../img/sprite.png);
-  background-position: -155px -237px;
+  background-position: -157px -317px;
   width: 14px;
   height: 13px; }
 
 .icon-fb-hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -120px;
+  background-position: -360px -60px;
   width: 40px;
   height: 40px; }
 
 .icon-fb {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -132px -257px;
   width: 40px;
   height: 40px; }
 
+.icon-fb_mob-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -270px -96px;
+  width: 70px;
+  height: 76px; }
+
+.icon-fb_mob {
+  background-image: url(../img/sprite.png);
+  background-position: -270px 0px;
+  width: 70px;
+  height: 76px; }
+
 .icon-git-hover {
   background-image: url(../img/sprite.png);
-  background-position: -120px -60px;
+  background-position: -192px -257px;
   width: 40px;
   height: 40px; }
 
 .icon-git {
   background-image: url(../img/sprite.png);
-  background-position: -120px 0px;
+  background-position: -360px -120px;
   width: 40px;
   height: 40px; }
 
+.icon-git_mob-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -180px -96px;
+  width: 70px;
+  height: 76px; }
+
+.icon-git_mob {
+  background-image: url(../img/sprite.png);
+  background-position: -90px -96px;
+  width: 70px;
+  height: 76px; }
+
 .icon-hat {
   background-image: url(../img/sprite.png);
-  background-position: -241px 0px;
+  background-position: -420px -242px;
   width: 25px;
   height: 20px; }
 
 .icon-key_f {
   background-image: url(../img/sprite.png);
-  background-position: -180px 0px;
+  background-position: -61px -317px;
   width: 41px;
   height: 36px; }
 
 .icon-list {
   background-image: url(../img/sprite.png);
-  background-position: -195px -180px;
+  background-position: -420px -202px;
   width: 25px;
   height: 20px; }
 
 .icon-lock {
   background-image: url(../img/sprite.png);
-  background-position: -120px -237px;
+  background-position: -122px -317px;
   width: 15px;
   height: 19px; }
 
-.icon-mail {
-  background-image: url(../img/sprite.png);
-  background-position: -40px -237px;
-  width: 20px;
-  height: 20px; }
-
 .icon-mail_c {
   background-image: url(../img/sprite.png);
-  background-position: 0px -180px;
+  background-position: -420px -57px;
   width: 39px;
   height: 37px; }
 
 .icon-mail_f {
   background-image: url(../img/sprite.png);
-  background-position: -180px -56px;
+  background-position: 0px -317px;
   width: 41px;
   height: 36px; }
 
+.icon-male_c_mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -192px;
+  width: 71px;
+  height: 45px; }
+
 .icon-pan {
   background-image: url(../img/sprite.png);
-  background-position: -241px -40px;
+  background-position: -420px -282px;
   width: 25px;
-  height: 20px; }
-
-.icon-phone {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -237px;
-  width: 20px;
   height: 20px; }
 
 .icon-phone_c {
   background-image: url(../img/sprite.png);
-  background-position: -120px -120px;
-  width: 39px;
-  height: 38px; }
-
-.icon-polaroid {
-  background-image: url(../img/sprite.png);
-  background-position: -59px -180px;
-  width: 26px;
-  height: 27px; }
-
-.icon-skype {
-  background-image: url(../img/sprite.png);
-  background-position: -80px -237px;
-  width: 20px;
-  height: 20px; }
-
-.icon-skype_c {
-  background-image: url(../img/sprite.png);
-  background-position: -180px -112px;
+  background-position: -420px 0px;
   width: 39px;
   height: 37px; }
 
+.icon-phone_c_mob {
+  background-image: url(../img/sprite.png);
+  background-position: -182px -192px;
+  width: 71px;
+  height: 45px; }
+
+.icon-polaroid {
+  background-image: url(../img/sprite.png);
+  background-position: -420px -114px;
+  width: 26px;
+  height: 27px; }
+
+.icon-skype_c {
+  background-image: url(../img/sprite.png);
+  background-position: -360px -240px;
+  width: 39px;
+  height: 37px; }
+
+.icon-skype_c_mob {
+  background-image: url(../img/sprite.png);
+  background-position: -91px -192px;
+  width: 71px;
+  height: 45px; }
+
 .icon-tw-hover {
   background-image: url(../img/sprite.png);
-  background-position: -60px -60px;
+  background-position: -360px 0px;
   width: 40px;
   height: 40px; }
 
 .icon-tw {
   background-image: url(../img/sprite.png);
-  background-position: 0px -60px;
+  background-position: -252px -257px;
   width: 40px;
   height: 40px; }
 
+.icon-tw_mob-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -180px 0px;
+  width: 70px;
+  height: 76px; }
+
+.icon-tw_mob {
+  background-image: url(../img/sprite.png);
+  background-position: -90px 0px;
+  width: 70px;
+  height: 76px; }
+
 .icon-unlock {
   background-image: url(../img/sprite.png);
-  background-position: -241px -175px;
+  background-position: -312px -257px;
   width: 22px;
   height: 19px; }
 
 .icon-vk-hover {
   background-image: url(../img/sprite.png);
-  background-position: -60px -120px;
+  background-position: -360px -180px;
   width: 40px;
   height: 40px; }
 
 .icon-vk {
   background-image: url(../img/sprite.png);
-  background-position: -60px 0px;
+  background-position: -72px -257px;
   width: 40px;
   height: 40px; }
+
+.icon-vk_mob-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -96px;
+  width: 70px;
+  height: 76px; }
+
+.icon-vk_mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 70px;
+  height: 76px; }
 
 .icon-crest,
 .icon-cloud,
@@ -1649,6 +1864,9 @@ Icon classes can be used entirely standalone. They are named after their origina
 .icon-mail_c,
 .icon-phone_c,
 .icon-skype_c,
+.icon-male_c_mob,
+.icon-phone_c_mob,
+.icon-skype_c_mob,
 .icon-bag,
 .icon-hat,
 .icon-list,
@@ -1762,11 +1980,12 @@ myWork-image_wrap {
 
 .addnew .icon {
   display: block;
-  margin-top: 25px;
-  margin-left: 50px;
-  margin-bottom: 10px;
   padding: 15px 15px 10px;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  width: 60px;
+  margin: 25px auto; }
+  .addnew .icon .icon-polaroid {
+    background-position: -296px -252px; }
 
 .callback {
   margin-bottom: 100px; }
@@ -1794,7 +2013,9 @@ myWork-image_wrap {
   width: 190px;
   background-color: #f6f6f6; }
   .input:focus {
-    border-color: #ef9d82; }
+    border-color: #ef9d82;
+    outline-color: #ef9d82;
+    outline-offset: 0; }
   .input:hover {
     border-color: #61cfb0; }
 
@@ -1850,10 +2071,14 @@ myWork-image_wrap {
   background-color: #61cfb0;
   margin-left: 30px; }
 
+.container-wrap {
+  width: 360px;
+  margin: 0 auto; }
+
 .login-wrap {
-  position: absolute;
-  margin-top: 200px;
-  left: 40%; }
+  margin: 200px auto 330px;
+  height: 100%;
+  width: 100%; }
   .login-wrap .name-form {
     font-size: 12px;
     padding-left: 25px;
@@ -1922,7 +2147,6 @@ myWork-image_wrap {
 
 .login-form .btn {
   padding: 10px 56px;
-  margin-top: 20px;
-  margin-left: 53px; }
+  margin-top: 20px; }
 
 /*# sourceMappingURL=map/callback.css.map */
