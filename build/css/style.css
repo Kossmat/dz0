@@ -44,9 +44,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  line-height: 1.5;
-  background: url("../img/back.jpg") no-repeat;
-  background-size: cover; }
+  line-height: 1.5; }
 
 .wrapper {
   margin-bottom: 50px; }
