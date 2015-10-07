@@ -1163,19 +1163,53 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
-  .navigation {
-    width: 60%;
+  /*.navigation{
+	width: 60%;
+	float: right;
+	position: relative;
+	&:after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 15%;
+        width: 0;
+        height: 0;
+        border: 15px solid #f7f8fa;
+        border-top-color: white;
+    }
+}*/
+  /* ***************** */
+  .logo-wrap {
+    height: 55px;
+    width: 75px; }
+  /* ***************** */
+  .icon-burger {
+    display: block;
     float: right;
-    position: relative; }
-    .navigation:after {
+    margin-top: 60px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 140px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
       content: "";
       position: absolute;
       top: -30px;
       right: 15%;
       width: 0;
       height: 0;
-      border: 15px solid #f7f8fa;
-      border-top-color: white; }
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .container-header {
     padding: 10px 60px; }
@@ -1307,6 +1341,17 @@ icon-lock {
   /* ***************** */
   .base-header .social-icons {
     display: none; }
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 30px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 177px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
   .container-base-header {
     max-width: 400px;
     margin-left: auto;
@@ -1315,19 +1360,22 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
-  .navigation {
-    width: 60%;
-    float: right;
-    position: relative; }
-    .navigation:after {
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
       content: "";
       position: absolute;
       top: -30px;
       right: 15%;
       width: 0;
       height: 0;
-      border: 15px solid #f7f8fa;
-      border-top-color: white; }
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .info {
     clear: both;
@@ -1477,6 +1525,35 @@ icon-lock {
       display: block;
       clear: both; }
   /* ***************** */
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 10px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 143px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px; }
+    .menu-burger:after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 15%;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
+  /* ***************** */
   .menu {
     display: none; }
   .info {
@@ -1580,6 +1657,36 @@ icon-lock {
       clear: both; }
   /* ******** */
   /* ***************** */
+  /* ***************** */
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 50px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 143px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 15%;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .menu {
     display: none; }
@@ -1853,6 +1960,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 70px;
   height: 76px; }
 
+.icon-burger,
 .icon-crest,
 .icon-cloud,
 .icon-polaroid,
@@ -2080,6 +2188,12 @@ myWork-image_wrap {
     padding-left: 25px;
     padding-bottom: 2px; }
 
+.name-form {
+  font-size: 12px;
+  padding-left: 25px;
+  padding-bottom: 2px;
+  color: #eee; }
+
 .login-form {
   width: 330px;
   min-height: 280px;
@@ -2091,13 +2205,27 @@ myWork-image_wrap {
   box-shadow: inset rgba(252, 255, 255, 0.7) 0 0.5px 3px; }
 
 .login-form input[type="text"],
-.login-form input[type="file"],
 .login-form input[type="password"] {
   width: 260px;
   padding: 10px 14px 10px 70px;
   margin-bottom: 11px;
   vertical-align: middle;
   display: inline-table; }
+
+.login-form input[type="text"]::-moz-placeholder,
+.login-form input[type="password"]::-moz-placeholder,
+.login-form textarea[type="text"]::-moz-placeholder {
+  color: cadetblue; }
+
+.login-form input[type="text"]:-ms-input-placeholder,
+.login-form input[type="password"]:-ms-input-placeholder,
+.login-form textarea[type="text"]:-ms-input-placeholder {
+  color: cadetblue; }
+
+.login-form input[type="text"], ::-webkit-input-placeholder,
+.login-form input[type="password"]::-webkit-input-placeholder,
+.login-form textarea[type="password"]::-webkit-textarea-placeholder {
+  color: cadetblue; }
 
 .login-form input[type="checkbox"] {
   margin-top: 10px; }

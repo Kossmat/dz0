@@ -127,7 +127,7 @@ gulp.task('html:build', function () {
     // conditionals: true,
     // spare:true
     // };
-    return gulp.src('src/*.html')
+    return gulp.src('src/mywork.html')
         .pipe(plumber())
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))

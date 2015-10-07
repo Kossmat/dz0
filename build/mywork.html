@@ -25,41 +25,6 @@
 <p class="browsehappy">Вы используте <strong>устаревший</strong> браузер. Пожалуйста <a href="browsehappy.com">обновите</a> его</p>
 <![endif] -->
 <div class="wrapper">
-    <div class="login / addpro">
-        <div class="addpro-wrap" /  id="element_to_pop_up">
-            <span class="name-form">Добавление проекта</span>
-            <form class="login-form" action="">
-                <a href=""><i class="icon-crest / b-close"></i></a>
-                <label  class="login-field" for="">
-                Название проекта
-                <input class="input" type="text"  placeholder="Введите название">
-                </label>
-
-                <label  class="login-field" for="">
-                Картинка проекта
-                <input class="input" type="file"  placeholder="Загрузите изображение">
-                <input class="addpro-button" type="button"> 
-                <!-- <i class="cloud"></i> -->
-                </label>
-
-                <label  class="login-field" for="">
-                URL проекта
-                <input class="input" type="text"  placeholder="Добавте ссылку">
-                </label>
-
-                <label  class="login-field" for="">
-                Описание
-                <textarea name="" id="textarea"  rows="4" class="input" type="text"  placeholder="Пара слов о Вашем проекте"></textarea>
-                </label>
-
-                <label class="btn-wrap" for="">
-                    <button class="btn / sub" type="submit">Добавить
-                    </button>
-                </label>
-            </form>
-        </div>
-    </div>
-
     <header class="base-header include__full">
         <div class="container-base-header">
             <span class="logo-wrap">
@@ -82,10 +47,9 @@
                 <li class="social-item">
                 <a href="" class="social-link icon-git"></a>
                 </li>
-            </ul>
-            
-            <div class="menu-burger / icon-burger">
-                <nav class="navigation">
+
+                <!-- <div class="icon-burger">
+                <nav class="menu-burger / navigation">
                     <ul class="navigation-list">
                         <li class="active / navigation-item /  current">
                         <a href="index.html" class="navigation-list">Обо мне</a>
@@ -100,7 +64,26 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+                </div> -->
+            </ul>
+            
+            <!-- <div class="icon-burger">
+                <nav class="menu-burger / navigation">
+                    <ul class="navigation-list">
+                        <li class="active / navigation-item /  current">
+                        <a href="index.html" class="navigation-list">Обо мне</a>
+                        </li>
+
+                        <li class="navigation-item">
+                        <a href="mywork.html" class="navigation-list">Мои Работы</a>
+                        </li>
+
+                        <li class="navigation-item">
+                        <a href="callback.html" class="navigation-list">Обратная связь</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
         </div>
     </header><!-- /header -->
     <!-- <div class="border include__full"></div> -->
@@ -229,7 +212,7 @@
                          </div>
                     </li>
 
-                    <li class="myWork-item / addnew" id="my-button">
+                    <li class="myWork-item / addnew" / id="add-new-item">
                         <a class href="">
                         <div class="icon">
                             <i class="icon-polaroid"></i>
@@ -294,6 +277,50 @@
             </div> <!-- end bottom-contacts --> 
         </div>   
     </div>  <!-- end main -->
+
+<div id="new-project-popup">
+    <div class="login / addpro">
+        <div class="addpro-wrap" /  id="element_to_pop_up">
+            <div class="addpro-header / name-form">
+            <span class="name-form">Добавление проекта</span>
+           </div> 
+            <form class="login-form" action="">
+                <a href=""><i class="icon-crest / b-close"></i></a>
+                <label  class="login-field" for="">
+                Название проекта
+                <input class="input" type="text"  placeholder="Введите название">
+                </label>
+
+                <label  class="login-field / file-upload" for="">
+                Картинка проекта
+                <div class="wrap-upload">
+                <i class="icon-cloud"></i>
+                <mark>Загрузите изображение</mark>
+                <input class="input" type="file">
+                </div>
+                <!-- <input class="addpro-button" type="button">  -->
+                </label>
+                
+
+                <label  class="login-field" for="">
+                URL проекта
+                <input class="input" type="text"  placeholder="Добавте ссылку">
+                </label>
+
+                <label  class="login-field" for="">
+                Описание
+                <textarea name="" id="textarea"  rows="4" class="input" type="text"  placeholder="Пара слов о Вашем проекте"></textarea>
+                </label>
+
+                <label class="btn-wrap" for="">
+                    <button class="btn / sub" type="submit">Добавить
+                    </button>
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+
 </div>
 <!-- <div class="layout_footer"></div> -->
     <footer class="base-footer / include__full">
@@ -309,5 +336,9 @@
             </p>
         </div>
     </footer> <!-- end footer -->
+
+    <script src="js/jquery.bpopup.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/tooltips.js"></script>
 </body>
 </html>

@@ -17,6 +17,13 @@
         }
 }
 
+.name-form{
+    font-size: 12px;
+    padding-left: 25px;
+    padding-bottom: 2px;
+    color: #eee;
+}
+
 .login-form{
     // margin: 200px auto;
     width: 330px;
@@ -31,7 +38,7 @@
 }
 
 .login-form input[type="text"],
-.login-form input[type="file"],
+// .login-form input[type="file"],
 .login-form input[type="password"]{
     width: 260px;
     padding: 10px 14px 10px 70px;
@@ -39,6 +46,25 @@
     vertical-align: middle;
     display: inline-table;
 }
+
+.login-form input[type="text"]::-moz-placeholder,
+.login-form input[type="password"]::-moz-placeholder,
+.login-form textarea[type="text"]::-moz-placeholder{
+    color: cadetblue;
+}
+
+.login-form input[type="text"]:-ms-input-placeholder,
+.login-form input[type="password"]:-ms-input-placeholder,
+.login-form textarea[type="text"]:-ms-input-placeholder{
+    color: cadetblue;
+}
+
+.login-form input[type="text"],::-webkit-input-placeholder,
+.login-form input[type="password"]::-webkit-input-placeholder,
+.login-form textarea[type="password"]::-webkit-textarea-placeholder{
+    color: cadetblue;
+}
+
 
 .login-form input[type="checkbox"]{
     margin-top: 10px;

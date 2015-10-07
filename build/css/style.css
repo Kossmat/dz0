@@ -1163,19 +1163,53 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
-  .navigation {
-    width: 60%;
+  /*.navigation{
+	width: 60%;
+	float: right;
+	position: relative;
+	&:after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 15%;
+        width: 0;
+        height: 0;
+        border: 15px solid #f7f8fa;
+        border-top-color: white;
+    }
+}*/
+  /* ***************** */
+  .logo-wrap {
+    height: 55px;
+    width: 75px; }
+  /* ***************** */
+  .icon-burger {
+    display: block;
     float: right;
-    position: relative; }
-    .navigation:after {
+    margin-top: 60px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 140px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
       content: "";
       position: absolute;
       top: -30px;
       right: 15%;
       width: 0;
       height: 0;
-      border: 15px solid #f7f8fa;
-      border-top-color: white; }
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .container-header {
     padding: 10px 60px; }
@@ -1307,6 +1341,17 @@ icon-lock {
   /* ***************** */
   .base-header .social-icons {
     display: none; }
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 30px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 177px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
   .container-base-header {
     max-width: 400px;
     margin-left: auto;
@@ -1315,19 +1360,22 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
-  .navigation {
-    width: 60%;
-    float: right;
-    position: relative; }
-    .navigation:after {
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
       content: "";
       position: absolute;
       top: -30px;
       right: 15%;
       width: 0;
       height: 0;
-      border: 15px solid #f7f8fa;
-      border-top-color: white; }
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .info {
     clear: both;
@@ -1477,6 +1525,35 @@ icon-lock {
       display: block;
       clear: both; }
   /* ***************** */
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 10px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 143px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px; }
+    .menu-burger:after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 15%;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
+  /* ***************** */
   .menu {
     display: none; }
   .info {
@@ -1580,6 +1657,36 @@ icon-lock {
       clear: both; }
   /* ******** */
   /* ***************** */
+  /* ***************** */
+  .icon-burger {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-left: 25px;
+    margin-right: 50px; }
+    .icon-burger:hover .menu-burger {
+      display: block;
+      right: 143px;
+      width: 200px;
+      z-index: 1; }
+  .menu-burger {
+    display: none; }
+  .menu-burger {
+    float: left;
+    position: relative;
+    top: 40px;
+    right: 50%; }
+    .menu-burger:after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 15%;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: #f7f8fa; }
+    .menu-burger .navigation-item {
+      font-size: 16px; }
   /* ***************** */
   .menu {
     display: none; }
@@ -1853,6 +1960,7 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 70px;
   height: 76px; }
 
+.icon-burger,
 .icon-crest,
 .icon-cloud,
 .icon-polaroid,
@@ -1878,43 +1986,35 @@ Icon classes can be used entirely standalone. They are named after their origina
     width: 100%;
     z-index: 100;
     background-color: rgba(0,0,0,0.5);*/ }
+  .addpro .name-form {
+    padding-left: 0; }
 
-#element_to_pop_up {
+#new-project-popup {
   display: none; }
 
 .addpro-wrap {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  /**/
-  /**/ }
+  position: relative; }
 
 .addpro .login-form {
   padding-top: 0;
   height: 480px;
   width: 365px;
-  padding-left: 24px; }
+  padding-left: 24px;
+  padding-right: 20px; }
 
 .addpro .login-form input[type="text"] {
   padding-left: 10px;
   font-size: 11px;
   width: 320px; }
 
-.addpro .login-form input[type="file"] {
-  padding-right: 50px;
-  padding-left: 10px;
-  font-size: 11px;
-  width: 320px;
-  position: relative; }
-
-/*.addpro .login-form input[placeholder]{
-    margin-right: 20px;
-    color: #636363;
-}*/
 .addpro .login-form .btn {
   padding: 10px 30px;
   display: block;
-  margin: 5px auto; }
+  margin: 5px auto;
+  border-bottom: 5px solid; }
+  .addpro .login-form .btn:hover {
+    border-bottom: 0;
+    border-top: 3px solid; }
 
 .icon-cloud {
   position: relative;
@@ -1949,36 +2049,53 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-repeat: no-repeat, repeat-x;
   background-position: 15px 12px, 0 0; }
 
-/*.sucsess_window {
-    width: 364px;
-    min-height: 70px;
-    top: 50%;
-    left: 50%;
-    margin-left: -183px;
-    margin-top: -35px;
-    padding: 16px 19px 12px;
-    position: absolute;
-    border-radius: 7px;
-    border: 1px solid #d2d2d2;
-    box-shadow: 0 18px 13px -13px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    z-index: 100;
-}
-
-.sucsess_window_close_box {
-    text-align: right;
-    margin: 7px 0 1px;
-    position: relative;
-}
-
-.sucsess_window_close_x {
+/***************/
+.file-upload {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  height: 4em; }
+  .file-upload mark {
     cursor: pointer;
-    padding: 2px 9px;
-    font-weight: 700;
-    position: absolute;
-    right: -22px;
-    top: -22px;
-}*/
+    background-color: transparent;
+    padding-left: 10px;
+    color: cadetblue;
+    font-size: 11px; }
+
+.wrap-upload {
+  border: 1px solid #d6d5d3;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 320px; }
+  .wrap-upload:focus {
+    border-color: #ef9d82;
+    outline-color: #ef9d82;
+    outline-offset: 0; }
+  .wrap-upload:hover {
+    border-color: #61cfb0; }
+
+.file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  opacity: 0; }
+
+.file-upload input[type="file"]::-webkit-input-placeholder {
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  padding-left: 10px;
+  color: green; }
+
+.icon-cloud {
+  cursor: pointer;
+  float: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  bottom: 8px;
+  left: 0; }
+
 .callback {
   margin-bottom: 100px; }
 

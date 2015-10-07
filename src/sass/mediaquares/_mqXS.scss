@@ -26,7 +26,7 @@
 	@include container(400px);
 }
 
-.navigation{
+/*.navigation{
 	width: 60%;
 	float: right;
 	position: relative;
@@ -40,7 +40,55 @@
         border: 15px solid #f7f8fa;
         border-top-color: white;
     }
+}*/
+
+/* ***************** */
+.logo-wrap{
+    height: 55px;
+    width: 75px;
 }
+/* ***************** */
+    .icon-burger{
+        display: block;
+        float: right;
+        margin-top: 60px;
+
+        &:hover{
+            .menu-burger{
+                display: block;
+                right: 140px;
+                width: 200px;
+                z-index: 1;
+            }   
+        }
+    }
+
+    .menu-burger{
+        display: none;
+    }
+
+    .menu-burger{
+        // width: 60%;
+        float: left;
+        position: relative;
+        top: 40px;
+        right: 50%;
+        &:after {
+            content: "";
+            position: absolute;
+            top: -30px;
+            right: 15%;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-bottom-color: #f7f8fa;
+        }
+
+        .navigation-item{
+            font-size: 16px;
+        }
+    }
+
 /* ***************** */
 
 .container-header {

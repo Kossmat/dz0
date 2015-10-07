@@ -12,6 +12,7 @@ var modalWindow = (function () {
     };
 
     var _showModal = function  () {
+        console.log('Вызов');
         $('#new-project-popup').bPopup({
             speed: 650,
             transition: 'slideDown',
