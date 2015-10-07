@@ -9,7 +9,20 @@
 	
 
 } 
+
+.logo-wrap {
+    height: 51px;
+    width: 65px;
+}  
 /* ***************** */
+.icon-burger.mobile{
+    display: none;
+}
+
+.icon-burger.planshet{
+    display: block;
+}
+
     .icon-burger{
         display: block;
         float: right;

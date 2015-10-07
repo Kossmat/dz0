@@ -14,7 +14,10 @@
 	padding-bottom: 0;
 }
 /* ***************** */
-
+.logo-wrap {
+    height: 54px;
+    width: 75px;
+} 
 /* ***************** */
 .base-header{
 	.social-icons{
@@ -48,10 +51,19 @@
     width: 75px;
 }
 /* ***************** */
+.icon-burger.mobile{
+    display: block;
+}
+
+.icon-burger.planshet{
+    display: none;
+}
+
     .icon-burger{
         display: block;
         float: right;
-        margin-top: 60px;
+        // margin-top: 60px;
+        margin-top: 44px;
 
         &:hover{
             .menu-burger{

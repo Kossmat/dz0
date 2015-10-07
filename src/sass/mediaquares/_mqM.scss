@@ -10,6 +10,11 @@
 	// padding-bottom: 200px;
 }
 
+.logo-wrap {
+    height: 51px;
+    width: 65px;
+}    
+
 .main{
 	padding-bottom: 40px;
 }
@@ -23,9 +28,19 @@
 
 .container-base-header{
 	@include container(688px);
+    .social-icons {
+        padding: 14px 0 12px;
+    }
 }
 
 /* ***************** */
+.icon-burger.mobile{
+    display: none;
+}
+
+.icon-burger.planshet{
+	display: block;
+}
 	.icon-burger{
 		display: block;
 		float: right;
@@ -47,11 +62,9 @@
 		display: none;
 	} 
 .menu-burger{
-	// width: 60%;
 	float: left;
 	position: relative;
-	top: 40px;
-	// right: 50%;
+	top: 44px;
 	&:after {
         content: "";
         position: absolute;

@@ -12,7 +12,19 @@
 	padding-bottom: 0;
 }
 
+.logo-wrap {
+    height: 54px;
+    width: 75px;
+}    
 /* ***************** */
+.icon-burger.mobile{
+    display: block;
+}
+
+.icon-burger.planshet{
+	display: none;
+}
+
 .base-header{
 	.social-icons{
 		display: none;
@@ -22,11 +34,11 @@
 	.icon-burger{
 		display: block;
 		float: right;
-		margin-top: 30px;
+		margin-top: 40px;
 		&:hover{
 			.menu-burger{
 			    display: block;
-				right: 177px;
+				right: 145px;
 				width: 200px;
 				z-index: 1;
 			}	
@@ -35,6 +47,7 @@
 
 	.menu-burger{
 		display: none;
+
 	} 
  
 .container-base-header{
@@ -45,7 +58,7 @@
 	// width: 60%;
 	float: left;
 	position: relative;
-	top: 40px;
+	top: 44px;
 	right: 50%;
 	&:after {
         content: "";

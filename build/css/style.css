@@ -821,6 +821,8 @@ th {
   background-image: url(../img/pattern.png);
   color: #fff;
   border-bottom: 7px solid #fff; }
+  .base-header .logo {
+    width: 100%; }
   .base-header .menu-burger {
     display: none; }
 
@@ -1127,6 +1129,12 @@ icon-lock {
 .contacts .contact-text {
   margin-bottom: 10px; }
 
+.icon-burger.mobile {
+  display: none; }
+
+.icon-burger.planshet {
+  display: none; }
+
 /* body */
 .no-bgsizecover body {
   background-color: #f5e49e; }
@@ -1152,6 +1160,9 @@ icon-lock {
   .main {
     padding-bottom: 0; }
   /* ***************** */
+  .logo-wrap {
+    height: 54px;
+    width: 75px; }
   /* ***************** */
   .base-header .social-icons {
     display: none; }
@@ -1183,10 +1194,14 @@ icon-lock {
     height: 55px;
     width: 75px; }
   /* ***************** */
+  .icon-burger.mobile {
+    display: block; }
+  .icon-burger.planshet {
+    display: none; }
   .icon-burger {
     display: block;
     float: right;
-    margin-top: 60px; }
+    margin-top: 44px; }
     .icon-burger:hover .menu-burger {
       display: block;
       right: 140px;
@@ -1338,16 +1353,23 @@ icon-lock {
     margin-bottom: 0; }
   .main {
     padding-bottom: 0; }
+  .logo-wrap {
+    height: 54px;
+    width: 75px; }
   /* ***************** */
+  .icon-burger.mobile {
+    display: block; }
+  .icon-burger.planshet {
+    display: none; }
   .base-header .social-icons {
     display: none; }
   .icon-burger {
     display: block;
     float: right;
-    margin-top: 30px; }
+    margin-top: 40px; }
     .icon-burger:hover .menu-burger {
       display: block;
-      right: 177px;
+      right: 145px;
       width: 200px;
       z-index: 1; }
   .menu-burger {
@@ -1363,7 +1385,7 @@ icon-lock {
   .menu-burger {
     float: left;
     position: relative;
-    top: 40px;
+    top: 44px;
     right: 50%; }
     .menu-burger:after {
       content: "";
@@ -1513,6 +1535,9 @@ icon-lock {
   /* ******** */
   .wrapper {
     margin-bottom: 0; }
+  .logo-wrap {
+    height: 51px;
+    width: 65px; }
   .main {
     padding-bottom: 40px; }
   /* ***************** */
@@ -1524,7 +1549,13 @@ icon-lock {
       content: " ";
       display: block;
       clear: both; }
+    .container-base-header .social-icons {
+      padding: 14px 0 12px; }
   /* ***************** */
+  .icon-burger.mobile {
+    display: none; }
+  .icon-burger.planshet {
+    display: block; }
   .icon-burger {
     display: block;
     float: right;
@@ -1541,7 +1572,7 @@ icon-lock {
   .menu-burger {
     float: left;
     position: relative;
-    top: 40px; }
+    top: 44px; }
     .menu-burger:after {
       content: "";
       position: absolute;
@@ -1657,7 +1688,14 @@ icon-lock {
       clear: both; }
   /* ******** */
   /* ***************** */
+  .logo-wrap {
+    height: 51px;
+    width: 65px; }
   /* ***************** */
+  .icon-burger.mobile {
+    display: none; }
+  .icon-burger.planshet {
+    display: block; }
   .icon-burger {
     display: block;
     float: right;
