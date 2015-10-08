@@ -15,16 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <!-- endbuild -->
 
-    <script src ="js/jquery-1.11.2.min.js"></script>
-
-    <!-- build:js js/vendor.js -->
-    <script src="apps/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-    <script src="js/selectivizr.js"></script>
-    <script src="js/modernizr3.0.0.js"></script>
-    <!-- endbuild -->
     
 <!--[if lt IE 9]>
     <script src="js/selectivizr.js"></script>
+    <script src="js/html5shiv-printshiv.min.js"></script>
     <script src="js/respond.min.js"></script>
 <!-- <![endif] -->
 </head>
@@ -40,12 +34,16 @@
                 <p class="name-form">Авторизуйтесь</p>
                 <form class="login-form" action="">
                     <label class="login-field" for="">
+                    <div class="icon-cont">
                         <i class="icon-mail_f"></i>
+                    </div>    
                         <input class="input" type="text" name="login" placeholder="Введите Email">
                     </label>
 
                     <label class="login-field" for="">
+                    <div class="icon-cont">
                         <i class="icon-key_f"></i>
+                    </div>    
                         <input class="input" type="password" name="password" placeholder="Введите пароль">
                     </label>
                     
@@ -79,5 +77,17 @@
     </div>
 </footer> <!-- end footer -->
 </div>
+
+    <script src ="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <!-- build:js js/vendor.js -->
+    <script src="src/js/html5shiv-printshiv.min.js"></script>
+    <script src="src/js/selectivizr.js"></script>
+    <script src="src/js/modernizr3.0.0.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+        <script src="js/callback.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

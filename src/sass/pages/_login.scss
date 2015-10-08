@@ -47,13 +47,13 @@
     display: inline-table;
 }
 
-.login-form input[type="text"]::-moz-placeholder,
+.login-form input[type="text"],::-moz-placeholder,
 .login-form input[type="password"]::-moz-placeholder,
 .login-form textarea[type="text"]::-moz-placeholder{
     color: cadetblue;
 }
 
-.login-form input[type="text"]:-ms-input-placeholder,
+.login-form input[type="text"],:-ms-input-placeholder,
 .login-form input[type="password"]:-ms-input-placeholder,
 .login-form textarea[type="text"]:-ms-input-placeholder{
     color: cadetblue;
@@ -76,19 +76,23 @@
     display: inline-table;
     font-size: 14px;
     color: $color-paragraph;
-}    
+} 
+
+// .login-field .icon-cont{
+//     display: inline-block;
+// }   
 
 .icon-mail_f,
 .icon-key_f{
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 47%;
-    left: 13%;
-    /*top: 20%;
-    left: 5%;*/
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    // top: 47%;
+    // left: 13%;
+    top: 14%;
+    left: 5%;
     vertical-align: middle;
 }   
 

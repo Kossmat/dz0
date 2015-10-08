@@ -2153,7 +2153,8 @@ myWork-image_wrap {
   padding: 10px;
   margin: 7px 0 10px;
   width: 190px;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  color: #91908f; }
   .input:focus {
     border-color: #ef9d82;
     outline-color: #ef9d82;
@@ -2183,6 +2184,7 @@ myWork-image_wrap {
   background-color: #f6f6f6;
   border: 1px solid #d6d5d3;
   border-radius: 5px;
+  color: #91908f;
   resize: none;
   font-size: 12px;
   width: 100%; }
@@ -2191,6 +2193,8 @@ myWork-image_wrap {
   #textarea:hover {
     border-color: #61cfb0; }
 
+/*****************/
+/*****************/
 .btn-group {
   margin-top: 10px; }
 
@@ -2250,12 +2254,12 @@ myWork-image_wrap {
   vertical-align: middle;
   display: inline-table; }
 
-.login-form input[type="text"]::-moz-placeholder,
+.login-form input[type="text"], ::-moz-placeholder,
 .login-form input[type="password"]::-moz-placeholder,
 .login-form textarea[type="text"]::-moz-placeholder {
   color: cadetblue; }
 
-.login-form input[type="text"]:-ms-input-placeholder,
+.login-form input[type="text"], :-ms-input-placeholder,
 .login-form input[type="password"]:-ms-input-placeholder,
 .login-form textarea[type="text"]:-ms-input-placeholder {
   color: cadetblue; }
@@ -2277,14 +2281,8 @@ myWork-image_wrap {
 .icon-mail_f,
 .icon-key_f {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 47%;
-  left: 13%;
-  /*top: 20%;
-    left: 5%;*/
+  top: 14%;
+  left: 5%;
   vertical-align: middle; }
 
 .check {

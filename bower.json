@@ -14,5 +14,8 @@
   ],
   "devDependencies": {
     "html5shiv": "~3.7.3"
+  },
+  "dependencies": {
+    "jquery-placeholder": "~2.1.3"
   }
 }
