@@ -148,12 +148,14 @@
   	height: 100%;
     color: #fff;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     border-radius: 3px;
     font-size: 11px;
     cursor: pointer;
     transition: all 0.3s linear 0s;
 	&:hover{
 		opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 	}
 }
 /**************************/

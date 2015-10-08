@@ -17,9 +17,14 @@
 	background-color: #eff3f7;
 	font-size: 12px;
 
-	position: relative;
+	/*position: relative;
 	clear: both;
-    min-height: 80px;
+    min-height: 80px;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    position: absolute;
 }
 
 

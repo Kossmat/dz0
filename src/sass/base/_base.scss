@@ -27,8 +27,12 @@ img{
 	// height: auto;
 }
 /***************/
+html{
+	position: relative;
+}
+
 html, body{
-    height: auto;
+    min-height: 100%;;
 }
 /*
 .main {
@@ -57,10 +61,13 @@ body{
 	font-size: 16px; 
 	line-height: 1.5;
 	// letter-spacing: 1px;
+	padding-bottom: 80px;
 }
 
 .wrapper{
-	margin-bottom: 50px;
+	// margin-bottom: 50px;
+	// width: 100px;
+    margin: auto;
 }
 
 

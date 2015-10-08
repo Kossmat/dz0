@@ -228,6 +228,10 @@ bottom-contacts{
 		.contacts-link{
 			font-size: 17px;
 		}
+        
+        .icon-cont {
+            display: inline-block !important;
+        }
 	}
 	.social-icons{
 		display: block;
@@ -244,6 +248,7 @@ bottom-contacts{
 .copyright{
 	font-size: 8px;
 	font-family: 'open_sanslight', sans-serif;
+    padding: 0;
 }
 /* ***************** */
 
@@ -261,4 +266,8 @@ bottom-contacts{
 		display: block;
 	}
 /* ***************** */	
+
+.contacts-link{
+    margin-left: 32px;
+}
 }

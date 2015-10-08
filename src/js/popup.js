@@ -11,7 +11,8 @@ var modalWindow = (function () {
         $('#add-new-item').on('click', _showModal);
     };
 
-    var _showModal = function  () {
+    var _showModal = function  (ev) {
+        ev.preventDefault();
         $('#new-project-popup').bPopup({
             speed: 650,
             transition: 'slideDown',

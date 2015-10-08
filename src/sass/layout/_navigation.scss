@@ -84,6 +84,9 @@
 			@extend %usualCont;	
 			border-bottom: 1px solid #d6d5d3;
 			padding: 0 10px;
+			// margin-left: auto;
+   //  		margin-right: auto;
+   //  		max-width: 100%;
 
 			&:hover{
 				@extend %hoverCont;
@@ -102,15 +105,15 @@
 		}
 
 		.icon-cont{
-		  display: inline-block;
+		  display: block;
 		  font-size: 0;
-		  vertical-align: middle
+		  // vertical-align: middle
 		}
 
 		.contacts-link{
 			font-size: 14px;
 			color: #727070;
-			margin-left: 32px;
+			// margin-left: 32px; 
 			display: inline-table;
 			vertical-align: middle;
 			&:hover{
@@ -118,10 +121,28 @@
 			}
 		}
 
+		.contacts-link-wrap{
+			display: block;
+			margin-left: 60px;
+			@include clearfix;
+		}
+
 		.contact-text{
 			margin-bottom: 10px;
 		}
 	}
+
+.icon-cont{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact-link{
+	vertical-align: middle;
+}
+
+
+
 
 
 .icon-burger.mobile{
