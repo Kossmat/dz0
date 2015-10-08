@@ -1,5 +1,4 @@
 node_modules/
 bower_components/
 src/apps/
-build/img/ico/
-build/img/images/
+build/
