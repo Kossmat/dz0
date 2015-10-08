@@ -2090,17 +2090,20 @@ Icon classes can be used entirely standalone. They are named after their origina
 /***************/
 .login-field input[type="text"], ::-moz-placeholder,
 .login-field input[type="password"]::-moz-placeholder,
+.login-field input[type="file"]::-moz-placeholder,
 .login-field textarea[type="text"]::-moz-placeholder {
   color: cadetblue; }
 
 .login-field input[type="text"], :-ms-input-placeholder,
 .login-field input[type="password"]:-ms-input-placeholder,
+.login-field input[type="file"]:-ms-input-placeholder,
 .login-form textarea[type="text"]:-ms-input-placeholder {
   color: cadetblue; }
 
 .login-field input[type="text"], ::-webkit-input-placeholder,
 .login-field input[type="password"]::-webkit-input-placeholder,
-.login-field textarea[type="password"]::-webkit-textarea-placeholder {
+.login-field input[type="file"]::-webkit-input-placeholder,
+.login-field textarea[type="text"]::-webkit-textarea-placeholder {
   color: cadetblue; }
 
 /***************/
