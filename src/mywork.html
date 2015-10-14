@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-ru">
+<html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
     <title>Портфолио</title>
@@ -11,24 +11,17 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <!-- endbuild -->
 
+    <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css">
+
     <!-- build:css css/myworks.css -->
     <link rel="stylesheet" type="text/css" href="css/myworks.css">
     <!-- endbuild -->
-
-    <script src ="js/jquery-1.11.2.min.js"></script>
-    <script src="js/popup.js"></script>
-    <!-- build:js js/vendor.js -->
-    <script src="apps/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-    <script src="js/selectivizr.js"></script>
-    <script src="js/modernizr3.0.0.js"></script>
-    <script src="js/jquery.bpopup.min.js"></script>
-    
-    <script src="js/tooltips.js"></script>
-    <!-- endbuild -->
-    
+   
 <!--[if lt IE 9]>
+    <script src="js/html5shiv-printshiv.min.js"></script>
     <script src="js/selectivizr.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="js/modernizr3.0.0.js"></script>
 <!-- <![endif] -->
 </head>
 <body>
@@ -303,31 +296,55 @@
             <div class="addpro-header / name-form">
             <span class="name-form">Добавление проекта</span>
            </div> 
-            <form class="login-form" action="">
+            <form id="add-new-project"  class="login-form" action="" role="form">
                 <a href=""><i class="icon-crest / b-close"></i></a>
+                <div class="server-mes / error-mes"></div>
+                <div class="server-mes / success-mes"></div>
                 <label  class="login-field" for="">
                 Название проекта
-                <input class="input" type="text"  placeholder="Введите название">
+                <input 
+                    type="text" 
+                    qtip-position="left"
+                    qtip-content="введите название"
+                    class="input" 
+                    placeholder="Введите название">
                 </label>
 
-                <label  class="login-field / file-upload" for="">
+               <label  class="login-field / file-upload" for="">
                 Картинка проекта
                 <div class="wrap-upload">
                 <i class="icon-cloud"></i>
                 <mark>Загрузите изображение</mark>
-                <input class="input" type="file" placeholder="Загрузите изображение">
+                <input 
+                qtip-position="left"
+                qtip-content="изображение" 
+                class="input" 
+                type="file" 
+                placeholder="Загрузите изображение">
                 </div>
                 </label>
-                
 
                 <label  class="login-field" for="">
                 URL проекта
-                <input class="input" type="text"  placeholder="Добавте ссылку">
+                <input  
+                type="text"
+                qtip-position="left"
+                qtip-content="ссылка на проект"  
+                placeholder="Добавте ссылку"
+                class="input">
                 </label>
 
                 <label  class="login-field" for="">
                 Описание
-                <textarea name="" id="textarea"  rows="4" class="input" type="text"  placeholder="Пара слов о Вашем проекте"></textarea>
+                <textarea
+                    type="text" 
+                    qtip-position="left"
+                    qtip-content="описание проекта" 
+                    name="" 
+                    id="textarea"  
+                    rows="4" 
+                    class="input"   
+                    placeholder="Пара слов о Вашем проекте"></textarea>
                 </label>
 
                 <label class="btn-wrap" for="">
@@ -337,7 +354,7 @@
             </form>
         </div>
     </div>
-</div>
+</div> <!-- end new-project-popup -->
 
 </div>
 <!-- <div class="layout_footer"></div> -->
@@ -355,12 +372,23 @@
         </div>
     </footer> <!-- end footer -->
 
+    <script src ="js/jquery-1.11.2.min.js"></script>
+
+    <!-- build:js js/vendor.js -->
+    <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/selectivizr.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/modernizr3.0.0.js"></script>
+    <!-- endbuild -->
+
     <script src="js/jquery.bpopup.min.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/popups.js"></script>
     <script src="js/tooltips.js"></script>
-    <!-- build:js js/main.js -->
-        <script src="js/callback.js"></script>
+
+    <!-- build:js js/placeholder.js -->
+        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="js/placeholder.js"></script>
     <!-- endbuild -->
 </body>
 </html>

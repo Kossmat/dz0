@@ -9,6 +9,7 @@ var modalWindow = (function () {
     // Прослушивает события 
     var _setUpListners = function () {
         $('#add-new-item').on('click', _showModal);
+        // $('#add-new-project').on('submit', _addProject);
     };
 
     var _showModal = function  (ev) {
@@ -21,7 +22,36 @@ var modalWindow = (function () {
                         .trigger("reset");
                 }
         });
-    }
+    };
+
+    /*var _addProject = function(ev){
+        console.log('добавление проекта');
+        ev.preventDefault();
+
+        var form = $(this);
+            url = 'add_project.php'
+            data = form.serialize();
+    };*/
+
+
+    // запроc на сервер
+/*    $.ajax({
+        url: '/path/to/file',
+        type: 'POST',
+        dataType: 'json',
+        data: data,
+    })
+    .done(function(ans) {
+        console.log("success");
+        console.log(ans);
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        console.log("complete");
+    });*/
+    
 
     // Возвращаем объект (публичные методы) 
     return {

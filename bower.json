@@ -16,6 +16,7 @@
     "html5shiv": "~3.7.3"
   },
   "dependencies": {
-    "jquery-placeholder": "~2.1.3"
+    "jquery-placeholder": "~2.1.3",
+    "qtip2": "~2.2.1"
   }
 }

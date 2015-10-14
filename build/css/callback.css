@@ -994,6 +994,13 @@ div.worksheet-item {
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px; }
 
+.qtip-mystyle {
+  background-color: #e1896a;
+  color: #9a4e32;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+  font-size: 12px; }
+
 /*html, body {
   height: 100%;
 }
@@ -1137,7 +1144,7 @@ icon-lock {
 
 .contacts .contacts-link-wrap {
   display: block;
-  margin-left: 60px;
+  margin-left: 80px;
   *zoom: 1; }
   .contacts .contacts-link-wrap:before, .contacts .contacts-link-wrap:after {
     content: " ";
@@ -1147,13 +1154,6 @@ icon-lock {
 
 .contacts .contact-text {
   margin-bottom: 10px; }
-
-.icon-cont {
-  display: inline-block;
-  vertical-align: middle; }
-
-.contact-link {
-  vertical-align: middle; }
 
 .icon-burger.mobile {
   display: none; }
@@ -1347,7 +1347,8 @@ icon-lock {
     .bottom-contacts-wrap .contacts .contacts-link {
       font-size: 17px; }
     .bottom-contacts-wrap .contacts .icon-cont {
-      display: inline-block !important; }
+      display: inline-block !important;
+      vertical-align: middle; }
     .bottom-contacts-wrap .social-icons {
       display: block;
       float: none; }
@@ -1540,7 +1541,8 @@ icon-lock {
     .bottom-contacts-wrap .social-item {
       margin: 0 13px; }
     .bottom-contacts-wrap .icon-cont {
-      display: inline-block !important; }
+      display: inline-block !important;
+      vertical-align: middle; }
     .bottom-contacts-wrap .contact-text {
       margin-left: 10px; }
   /* ***************** */
@@ -1667,6 +1669,8 @@ icon-lock {
   .hide {
     display: block; }
   /* ***************** */
+  .bottom-contacts-wrap .icon-cont {
+    vertical-align: middle; }
   /* ***************** */
   .icon {
     display: inline-block;
@@ -1794,6 +1798,8 @@ icon-lock {
     margin-left: 15px; }
   .contacts .icon-cont {
     display: inline-block !important; }
+  .bottom-contacts-wrap .icon-cont {
+    vertical-align: middle; }
   .bottom-contacts .social-icons {
     display: none; }
   .lock {
@@ -2183,7 +2189,7 @@ myWork-image_wrap {
   display: inline-block;
   width: 45%; }
   .form-group:first-of-type {
-    margin-right: 21px; }
+    margin-right: 30px; }
 
 .input {
   border: 1px solid #d6d5d3;
@@ -2195,9 +2201,8 @@ myWork-image_wrap {
   background-color: #f6f6f6;
   color: #91908f; }
   .input:focus {
-    border-color: #ef9d82;
-    outline-color: #ef9d82;
-    outline-offset: 0; }
+    outline-color: transparent;
+    outline-offset: 1; }
   .input:hover {
     border-color: #61cfb0; }
 
@@ -2214,9 +2219,6 @@ myWork-image_wrap {
     display: inline-table;
     padding-top: 10px;
     padding-right: 20px; }
-  .input-code .input {
-    padding: 5px 10px;
-    vertical-align: middle; }
 
 #textarea {
   padding: 10px;
@@ -2228,7 +2230,8 @@ myWork-image_wrap {
   font-size: 12px;
   width: 100%; }
   #textarea:focus {
-    border-color: #ef9d82 !important; }
+    outline-color: transparent;
+    outline-offset: 1; }
   #textarea:hover {
     border-color: #61cfb0; }
 
@@ -2255,6 +2258,9 @@ myWork-image_wrap {
   color: #1e7465;
   background-color: #61cfb0;
   margin-left: 30px; }
+
+.form-group.wide {
+  width: 100%; }
 
 .container-wrap {
   width: 360px;
@@ -2315,7 +2321,8 @@ myWork-image_wrap {
   position: relative;
   display: inline-table;
   font-size: 14px;
-  color: #91908f; }
+  color: #91908f;
+  vertical-align: middle; }
 
 .icon-mail_f,
 .icon-key_f {
@@ -2346,6 +2353,7 @@ myWork-image_wrap {
 
 .login-form .btn {
   padding: 10px 56px;
-  margin-top: 20px; }
+  margin: 20px auto;
+  display: block; }
 
 /*# sourceMappingURL=map/callback.css.map */

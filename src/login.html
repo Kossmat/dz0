@@ -10,16 +10,16 @@
     <!-- build:css css/vendor.css -->
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <!-- endbuild -->
-
+    <link rel="stylesheet" type="text/css" href="css/jquery.qtip.min.css">
     <!-- build:css css/login.css -->
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <!-- endbuild -->
 
-    
 <!--[if lt IE 9]>
-    <script src="js/selectivizr.js"></script>
     <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/selectivizr.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="js/modernizr3.0.0.js"></script>
 <!-- <![endif] -->
 </head>
 <body>
@@ -32,19 +32,33 @@
             <div class="login">
             <div class="login-wrap">
                 <p class="name-form">Авторизуйтесь</p>
-                <form class="login-form" action="">
+                <form class="login-form" id="contact-me" action="">
                     <label class="login-field" for="">
                     <div class="icon-cont">
                         <i class="icon-mail_f"></i>
                     </div>    
-                        <input class="input" type="text" name="login" placeholder="Введите Email">
+                        <input 
+                        class="input" 
+                        type="text"
+                        qtip-position="left"
+                        qtip-content="введите email"
+                        id="mail" 
+                        name="login" 
+                        placeholder="Введите Email">
                     </label>
 
                     <label class="login-field" for="">
                     <div class="icon-cont">
                         <i class="icon-key_f"></i>
                     </div>    
-                        <input class="input" type="password" name="password" placeholder="Введите пароль">
+                        <input 
+                        class="input" 
+                        type="text"
+                        qtip-position="left"
+                        qtip-content="введите пароль" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Введите пароль">
                     </label>
                     
                     <label class="check" for="">
@@ -81,15 +95,21 @@
 
 
     <script src ="js/jquery-1.11.2.min.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
+
     <!-- build:js js/vendor.js -->
-    <script src="src/js/html5shiv-printshiv.min.js"></script>
-    <script src="src/js/selectivizr.js"></script>
-    <script src="src/js/modernizr3.0.0.js"></script>
+    <script src="js/html5shiv-printshiv.min.js"></script>
+    <script src="js/selectivizr.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/modernizr3.0.0.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js js/main.js -->
-        <script src="js/callback.js"></script>
+    <script src="js/jquery.qtip.min.js"></script>
+    <script src="js/tooltips.js"></script>
+    <script src="js/contacts.js"></script>
+
+    <!-- build:js js/placeholder.js -->
+        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="js/placeholder.js"></script>
     <!-- endbuild -->
 </body>
 </html>

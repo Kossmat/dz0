@@ -71,6 +71,7 @@
     display: inline-table;
     font-size: 14px;
     color: $color-paragraph;
+    vertical-align: middle;
 } 
 
 // .login-field .icon-cont{
@@ -122,7 +123,8 @@
 
 .login-form .btn{
     padding: 10px 56px;
-    margin-top: 20px;
+    margin: 20px auto;
+    display: block;
     // margin-left: 53px;
 }
 

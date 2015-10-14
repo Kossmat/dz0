@@ -23,7 +23,7 @@
     display: inline-block;
     width: 45%;
     &:first-of-type{
-        margin-right: 21px;
+        margin-right: 30px;
     }
 }
 
@@ -39,9 +39,9 @@
     color: $color-paragraph;
     // width: 40%;
     &:focus{
-        border-color: #ef9d82;
-        outline-color: #ef9d82;
-        outline-offset: 0;
+        // border-color: transparent;
+        outline-color: transparent;
+        outline-offset: 1;
     }
     &:hover{
         border-color: #61cfb0;
@@ -67,8 +67,8 @@
     }
 
     .input{
-        padding: 5px 10px;
-        vertical-align: middle;
+        // padding: 5px 10px;
+        // vertical-align: middle;
     }
 }
 
@@ -82,7 +82,8 @@
     font-size: 12px;
     width: 100%;
         &:focus{
-            border-color: #ef9d82!important;
+            outline-color: transparent;
+            outline-offset: 1;
         }
         &:hover{
             border-color: #61cfb0;
@@ -120,4 +121,8 @@
     background-color: #61cfb0;
     margin-left: 30px;
 
+}
+
+.form-group.wide{
+    width: 100%;
 }

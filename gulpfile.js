@@ -184,22 +184,22 @@ gulp.task('sass:build', function () {
 /**********************************************
 JS
 **********************************************/
-// gulp.task('js:build', function () {
-//     var assets = useref.assets();
-//     // return gulp.src('src/*.html')
+/*gulp.task('js:build', function () {
+    var assets = useref.assets();
+     // return gulp.src('src/*.html')
 
-//     gulp.src(path.src.js)
+     gulp.src(path.src.js)
 
-//         .pipe(plumber())
-//             // .pipe(sourcemaps.init())
-//         .pipe(assets)
-//         .pipe(gulpif('*.js', uglify())) 
-//         .pipe(assets.restore())
-//         .pipe(useref())  
-//             // .pipe(sourcemaps.write()) 
-//         .pipe(gulp.dest(path.build.js))
-//         .pipe(reload({stream: true}));
-// });
+         .pipe(plumber())
+             // .pipe(sourcemaps.init())
+        .pipe(assets)
+         .pipe(gulpif('*.js', uglify())) 
+        .pipe(assets.restore())
+         .pipe(useref())  
+             // .pipe(sourcemaps.write()) 
+        .pipe(gulp.dest(path.build.js))
+        .pipe(reload({stream: true}));
+});*/
 
 /**********************************************
 IMG
@@ -247,9 +247,9 @@ gulp.task(
     'build', [
     // 'jade:build',
     'html:build',
-    'sass:build'
+    'sass:build',
     // 'bower:build',
-    // 'js:build',
+    //'js:build'
     // 'fonts:build',
     // 'sprite:build',
     // 'image:build'
