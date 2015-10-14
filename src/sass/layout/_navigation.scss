@@ -98,12 +98,6 @@
 			}
 		}
 
-		.contacts-item-mail{
-			.contacts-link{
-				// text-decoration: underline;
-			}
-		}
-
 		.icon-cont{
 		  display: block;
 		  font-size: 0;
@@ -152,3 +146,62 @@
 .icon-burger.planshet{
 	display: none;
 }
+
+/*.contacts .contactssss-item{
+	position: relative;
+	padding: 0 0 0 37px;
+	@extend %usualCont;	
+	border-bottom: 1px solid #d6d5d3;
+	width: 243px;
+
+	&:before{
+		content: " ";
+		background-image: url(../img/sprite.png);
+		display: block;
+		// width: 100px;
+		position: absolute;
+		top: 52%;
+		left: 29px;
+		transform: translateY(-50%) translateX(-50%);
+	}
+
+	&:hover{
+		@extend %hoverCont;
+	}
+
+	&:last-child{
+		border-radius: 0 0 5px 5px;
+		box-shadow: inset rgba(252,255,255,.7) 0 0.5px 3px;
+	}
+
+	.contacts-link{
+		padding: 10px 20px;
+		margin-left: 32px;
+	}
+
+}
+
+.contacts .contactssss-item.icon-skype_c{
+		&:before{
+			background-position: -360px -240px;
+			width: 39px;
+			height: 37px;
+		}
+	}
+
+
+.contacts .contactssss-item.icon-mail_c{
+		&:before{
+			background-position: -420px -57px;
+			width: 39px;
+			height: 37px;
+		}
+	}
+
+.contacts .contactssss-item.icon-phone_c{
+		&:before{
+			background-position: -420px 0px;
+			width: 39px;
+			height: 37px;
+		}
+	}		*/

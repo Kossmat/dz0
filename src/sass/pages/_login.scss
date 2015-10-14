@@ -1,11 +1,12 @@
 .container-wrap{
-    width: 360px;
+    width: 330px;
     margin: 0 auto;
 }
 .login-wrap{
     margin: 200px auto;
     height: 100%;
     width: 100%;
+    display: inline-block;
 
         .name-form{
             font-size: 12px;
@@ -22,6 +23,7 @@
 }
 
 .login-form{
+    display: inline-block;
     width: 330px;
     min-height: 280px;
     padding-top: 32px;
@@ -123,9 +125,8 @@
 
 .login-form .btn{
     padding: 10px 56px;
-    margin: 20px auto;
+    margin: 20px 55px;
     display: block;
-    // margin-left: 53px;
 }
 
 

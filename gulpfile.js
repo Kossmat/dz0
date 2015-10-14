@@ -175,7 +175,7 @@ gulp.task('sass:build', function () {
         //     html: glob.sync('src/index.html')
         // }))
         ///
-        //.pipe(minifyCSS())
+        .pipe(minifyCSS())
         .pipe(sourcemaps.write('./map'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));

@@ -51,7 +51,7 @@ var validation = (function () {
 					},
 					hide: {
 						event: 'keydown hideTooltip',
-        						inactive: 7000
+        						inactive: 10000
 					},
 					position: position,
 					style: {
