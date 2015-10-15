@@ -223,3 +223,36 @@
 			height: 37px;
 		}
 	}	
+
+/**************************************/
+.no-csstransforms .contactssss-item{
+	padding: 7px 0 6px 56px;
+	background-color: #eae9e8;
+	&:before, .js{
+		content: " ";
+		background-image: url(../img/sprite.png);
+		display: block;
+		position: absolute;
+	 	top: 0%;
+		left: 10px;
+	}
+}
+
+.no-csstransforms .contactssss-item.js{
+		&:before{
+			left: 0;
+		}
+	}
+
+.csstransforms .contactssss-item{
+		padding: 10px 0 6px 56px;
+		&:before{
+	    content: " ";
+	    color: $color-paragraph;
+	    background-color: inherit;
+	    position: absolute;
+	    top: 52%;
+		left: -10px;
+	    transform: translateY(-50%) translateX(50%);
+	}
+}	
