@@ -151,7 +151,7 @@
 
 .contacts .contactssss-item{
 	position: relative;
-	padding: 7px 0 6px 56px;
+	// padding: 7px 0 6px 56px;
 	background: #f9f8f8;
 	// @extend %usualCont;	
 	border-bottom: 1px solid #d6d5d3;
@@ -188,6 +188,7 @@
 		color: #727070;
 		display: inline-table;
 		vertical-align: middle;
+		padding: 0px 0 3px 4px;
 
 		&:hover{
 			text-decoration: underline;
@@ -245,7 +246,7 @@
 	}
 
 .csstransforms .contactssss-item{
-		padding: 10px 0 6px 56px;
+		padding: 8px 0 6px 56px;
 		&:before{
 	    content: " ";
 	    color: $color-paragraph;
